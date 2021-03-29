@@ -1,0 +1,128 @@
+<!doctype html>
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <title>{% block title %}Notebook{% endblock %}</title>
+    <!--stylesheet-->
+    <link rel="stylesheet" href="{% static 'accounts/homepage.css' %}">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+    <!--Jquery-->
+    <script type="text/javascript" src="{% static 'accounts/JQuery3.3.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'accounts/lightslider.js' %}"></script>
+    <link rel="shortcut icon" href="{% static 'accounts/favicon.ico' %}"/>
+    {% block head_block %}
+        <link rel="stylesheet" href="{% static 'accounts/home_background.css' %}">
+    {% endblock %}
+</head>
+
+<body>
+
+<!--Navbar-->
+<div>
+    <nav class="Navbar">
+        <ul>
+            <i class="fab fa-phoenix-framework fa-3x"><strong class="logo">N</strong>ote<strong class="logo">B</strong>ook</i>
+            <li><a href="{% url 'home' %}" aria-current="page"><i class="fas fa-home"></i> Home</a></li>
+            |
+            <li><a href="{% url 'about' %}"><i class="fas fa-edit"></i> About</a></li>
+            |
+            <li><a href="/password_change/"><i class="fas fa-user-edit"></i> Change Password</a></li>
+            |
+            <li><a href="/admin/"><i class="fas fa-user-shield"></i> Admin</a></li>
+            |
+            <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </nav>
+</div>
+<!--end-->
+
+{% block body_block %}
+    <!--user-->
+    <div class="greet">
+        <strong class="user">
+            WELCOME,</strong><strong class="user1"> {{ request.user }} <i
+            class="fas fa-user-graduate fa-1x"></i></strong>
+        </strong>
+    </div>
+    <!--end-->
+
+    <!--Radio here-->
+        <div id="sem-btn">
+        <fieldset>
+            <legend><b>Filters</b></legend>
+            <form action="" method="Post" id="theForm">{% csrf_token %}
+                <span>
+            <input type="radio" name="sem" id="sem-1" value="1" onChange="autoSubmit();"><label for="sem-1">Sem-1</label>
+            </span>
+                <span>
+            <input type="radio" name="sem" id="sem-2" value="2" onChange="autoSubmit();"><label for="sem-2">Sem-2</label>
+            </span>
+                <span>
+            <input type="radio" name="sem" id="sem-3" value="3" onChange="autoSubmit();"><label for="sem-3">Sem-3</label>
+            </span>
+                <span>
+            <input type="radio" name="sem" id="sem-4" value="4" onChange="autoSubmit();"><label for="sem-4">Sem-4</label>
+            </span>
+                <span>
+            <input type="radio" name="sem" id="sem-5" value="5" onChange="autoSubmit();"><label for="sem-5">Sem-5</label>
+            </span>
+                <span>
+            <input type="radio" name="sem" id="sem-6" value="6" onChange="autoSubmit();"><label for="sem-6">Sem-6</label>
+            </span>
+                <span>
+            <input type="radio" name="sem" id="sem-7" value="7" onChange="autoSubmit();"><label for="sem-7">Sem-7</label>
+            </span>
+                <span>
+            <input type="radio" name="sem" id="sem-8" value="8" onChange="autoSubmit();"><label for="sem-8">Sem-8</label>
+            </span>
+            </form>
+        </fieldset>
+    </div>
+
+    <!--end-->
+
+    <!--Cards-->
+    <div class="container">
+        <ul id="autoWidth" class="cs-hidden">
+            {% for i in Subject|slice:"0:" %}
+                <li class="item-a">
+                    <a href="{% url 'notesview' id=i.id %}">
+                        <div class="card">
+                            <div class="content">
+                                <h2 id="subcode">{{ i.subject_code }}</h2>
+                                <h3 id="subname">{{ i.subject_name }}</h3><br>
+                                <p id="desc">{{ i.description }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <!--end-->
+
+<!--vanila-tilt-->
+<script src="{% static 'accounts/vanilla-tilt.js' %}"></script>
+<script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400
+    });
+</script>
+<script src="{% static 'accounts/script.js' %}"></script>
+<script>
+function autoSubmit()
+{
+    var formObject = document.forms['theForm'];
+    formObject.submit();
+}
+</script>
+{% endblock %}
+</body>
+
+</html>

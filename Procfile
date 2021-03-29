@@ -1,0 +1,1 @@
+web: gunicorn NoteBook.wsgi --log-file - 

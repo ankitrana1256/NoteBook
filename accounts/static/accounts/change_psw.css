@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("images/psw_change.jpg") no-repeat fixed;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+nav {
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    z-index: 1;
+    height: 7%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    padding-left: 25px;
+    backdrop-filter: blur(5px);
+    margin: 10px;
+    text-align: right;
+    z-index: 3;
+}
+
+nav li {
+    display: inline-block;
+    padding: 15px 10px 10px 0.1px;
+}
+
+nav li a:hover {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+    color: black;
+}
+
+.fa-phoenix-framework {
+    float: left;
+}
+
+.fa-sign-out-alt {
+    color: rgb(38, 0, 255);
+}
+
+.fa-user-shield {
+    color: green;
+}
+
+.fa-user-edit {
+    color: orangered;
+}
+
+.fa-home {
+    color: lightblue
+}
+
+.fa-edit {
+    color: violet;
+}
+
+.logo {
+    color: yellow;
+}
+
+.login-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    padding: 80px 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.form img {
+    position: absolute;
+    top: -50px;
+    left: 140px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+
+.form h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    color: #ff652f;
+}
+
+.form .input-group {
+    position: relative;
+}
+
+.form .input-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+}
+
+.form .input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    pointer-events: none;
+    /* transition: 0.3s ease-out; */
+}
+
+.form .input-group input:focus+label,
+.form .input-group input:valid+label {
+    transform: translateY(-18px);
+    font-size: 0.8rem;
+}
+
+.btn {
+    display: block;
+    margin: auto auto;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

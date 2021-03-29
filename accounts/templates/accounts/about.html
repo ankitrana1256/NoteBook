@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'accounts/about.css' %}" />
+    <link rel="shortcut icon" href="{% static 'accounts/favicon.ico' %}"/>
+    <title>About</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="imgBx">
+            <img src="{% static 'accounts/images/backend.png' %}">
+        </div>
+        <div class="content">
+            <h2><b>Ankit Rana</b><br><span>Backend Developer</span></h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <img src="{% static 'accounts/images/designer.png' %}">
+        </div>
+        <div class="content">
+            <h2><b>Pallab Manchanda</b><br><span>Graphic Designer</span></h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <img src="{% static 'accounts/images/frontend.jpg' %}">
+        </div>
+        <div class="content">
+            <h2><b>Sakshi Agarwal</b><br><span>Frontend Developer</span></h2>
+        </div>
+    </div>
+</body>
+
+</html>
