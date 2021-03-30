@@ -113,8 +113,8 @@ class SignUpView(View):
                 'token': account_activation_token.make_token(user),
             })
             email_from = settings.EMAIL_HOST_USER
-            recipent_list = [user.email,]
-            send_mail(subject, message, email_from, recipent_list)
+            recipient_list = [user.email,]
+            send_mail(subject, message, email_from, recipient_list)
             # user.email_user(subject, message)
             messages.success(request, ('Please Confirm your email to complete registration.'))
         return render(request, self.template_name, {'form': form})
