@@ -4,7 +4,7 @@ from django import forms
 
 
 class CreateUserForm(UserCreationForm):
-    username = forms.CharField(max_length=16, required=True)
+    username = forms.CharField(required=True)
     email = forms.EmailField(required=True)
     first_name = forms.CharField(required=True)
     last_name = forms.CharField(required=True)

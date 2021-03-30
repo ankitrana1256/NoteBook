@@ -1,6 +1,5 @@
 from django.contrib import admin
 from django.urls import path, include
-from accounts import views
 
 
 admin.site.site_header = 'NoteBook Admin'

@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='notes',
             name='uploaded_by',
-            field=models.CharField(default=django.utils.timezone.now, max_length=20),
+            field=models.CharField(default=django.utils.timezone.now, max_length=60),
             preserve_default=False,
         ),
     ]

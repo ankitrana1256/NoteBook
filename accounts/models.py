@@ -81,7 +81,7 @@ class Notes(models.Model):
     name = models.CharField(max_length=40)
     date = models.DateField(auto_now_add=True)
     file_upload = models.FileField(upload_to=unique_file_path)
-    uploaded_by = models.CharField(max_length=20)
+    uploaded_by = models.CharField(max_length=60)
 
     class Meta:
         verbose_name = "Note"
