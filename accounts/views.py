@@ -15,6 +15,8 @@ from django.contrib.auth.models import User
 from django.utils.encoding import force_text
 from django.utils.http import urlsafe_base64_decode
 from .tokens import account_activation_token
+from django.conf import settings
+from django.core.mail import send_mail
 
 
 def login_page(request):
@@ -99,11 +101,9 @@ class SignUpView(View):
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
         if form.is_valid():
-
             user = form.save(commit=False)
             user.is_active = False # Deactivate account till it is confirmed
             user.save()
-
             current_site = get_current_site(request)
             subject = 'Activate Your NoteBook Account'
             message = render_to_string('accounts/account_activation_email.html', {
@@ -112,8 +112,10 @@ class SignUpView(View):
                 'uid': urlsafe_base64_encode(force_bytes(user.pk)),
                 'token': account_activation_token.make_token(user),
             })
-            user.email_user(subject, message)
-
+            email_from = settings.EMAIL_HOST_USER
+            recipent_list = [user.email,]
+            send_mail(subject, message, email_from, recipent_list)
+            # user.email_user(subject, message)
             messages.success(request, ('Please Confirm your email to complete registration.'))
         return render(request, self.template_name, {'form': form})
 
