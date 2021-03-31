@@ -270,3 +270,121 @@ a:hover span:nth-child(4) {
     transition: 0.5s;
     transition-delay: 0.075s;
 }
+
+@media screen and (max-width: 1099px){
+    .neon{
+        position: relative;
+        top: 0;
+        left: 25%;
+    }
+    .neon::before{
+        filter: blur(20px);
+    }
+}
+@media screen and (max-width: 955px){
+    .box{
+        height: 200px;
+    }
+    .box .imgBx img{
+        height: 180px;
+    }
+    .box:hover {
+        height: 300px;
+    }
+
+
+}
+@media screen and (max-width: 860px){
+    header{
+        height: 100px;
+    }
+    .neon{
+        left: 30%;
+    }
+    #roles{
+        height: 300px;
+    }
+
+     #back-btn{
+    height: 90px;
+    }
+    .btn{
+       top: -21px;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    .neon{
+        left: 35%;
+    }
+    header{
+        height: 60px;
+    }
+    #roles{
+        height: 600px;
+        display: block;
+    }
+    .box{
+        margin: 55px auto;
+        width: 300px;
+    }
+
+    .box .imgBx{
+        padding: 10px 50px;
+
+     }
+     #back-btn{
+         display: block;
+         top: 304px;
+         left: 261px;
+     }
+}
+@media screen and (max-width: 600px){
+    .neon{
+        left: 45%;
+    }
+}
+@media screen and (max-width: 557px){
+    .neon{
+        font-size: 2.5em;
+    }
+    #back-btn{
+        left: 195px;
+    }
+}
+@media screen and (max-width: 475px){
+    .neon{
+        font-size: 2em;
+    }
+    #back-btn{
+        left: 139px;
+    }
+}
+@media screen and (max-width: 475px){
+    .neon{
+        font-size: 1.67em;
+    }
+    #back-btn{
+        left: 93px;
+    }
+}
+@media screen and (max-width: 333px){
+    .neon{
+        font-size: 1.5em;
+        /* padding: 10px; */
+    }
+    .neon::before{
+        filter: blur(10px);
+    }
+}
+@media screen and (max-width: 328px){
+    .box{
+        margin: 55px auto;
+        width: 250px;
+    }
+
+    .box .imgBx{
+        padding: 10px 30px;
+
+     }
+}
