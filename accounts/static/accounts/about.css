@@ -270,7 +270,6 @@ a:hover span:nth-child(4) {
     transition: 0.5s;
     transition-delay: 0.075s;
 }
-
 @media screen and (max-width: 1099px){
     .neon{
         position: relative;
@@ -291,7 +290,7 @@ a:hover span:nth-child(4) {
     .box:hover {
         height: 300px;
     }
-
+    
 
 }
 @media screen and (max-width: 860px){
@@ -304,15 +303,16 @@ a:hover span:nth-child(4) {
     #roles{
         height: 300px;
     }
-
+    
      #back-btn{
     height: 90px;
+    
     }
     .btn{
        top: -21px;
     }
 }
-@media screen and (max-width: 700px)
+@media screen and (max-width: 710px)
 {
     .neon{
         left: 35%;
@@ -325,21 +325,25 @@ a:hover span:nth-child(4) {
         display: block;
     }
     .box{
-        margin: 55px auto;
+        margin: 55px 176px;
         width: 300px;
     }
-
+    
     .box .imgBx{
         padding: 10px 50px;
 
      }
      #back-btn{
          display: block;
-         top: 304px;
-         left: 261px;
+         position: absolute;
+         top: 1018px;
+         left: 250px;
      }
 }
-@media screen and (max-width: 626px){
+@media screen and (max-width: 630px){
+    .neon{
+        left: 45%;
+    }
     #back-btn{
         left: 241px;
     }
@@ -351,6 +355,10 @@ a:hover span:nth-child(4) {
     #back-btn{
         left: 220px;
     }
+    .box{
+        margin: 55px 118px;
+    }
+    
 }
 @media screen and (max-width: 585px){
     #back-btn{
@@ -363,12 +371,22 @@ a:hover span:nth-child(4) {
         font-size: 2.5em;
     }
     #back-btn{
-        left: 195px;
+        left: 198px;
     }
+}
+@media screen and (max-width: 520px){
+    .box{
+        margin: 55px 90px;
+    }
+    #back-btn{
+        left: 170px;
+    }
+    
+
 }
 @media screen and (max-width: 498px){
     #back-btn{
-        left: 153px;
+        left: 164px;
     }
 }
 @media screen and (max-width: 475px){
@@ -384,7 +402,15 @@ a:hover span:nth-child(4) {
         font-size: 1.67em;
     }
     #back-btn{
-        left: 150px;
+        left: 157px;
+    }
+}
+@media screen and (max-width: 437px){
+    .box{
+        margin: 55px 50px;
+    }
+    #back-btn{
+        left: 130px;
     }
 }
 @media screen and (max-width: 417px){
@@ -394,10 +420,18 @@ a:hover span:nth-child(4) {
 }
 @media screen and (max-width: 375px){
     #back-btn{
-        left: 102px;
+        left: 118px;
     }
 }
-@media screen and (max-width: 333px){
+@media screen and (max-width: 369px){
+    .box{
+        margin: 55px 20px;
+    }
+    #back-btn{
+        left: 99px;
+    }
+}
+@media screen and (max-width: 335px){
     .neon{
         font-size: 1.5em;
         /* padding: 10px; */
@@ -406,17 +440,22 @@ a:hover span:nth-child(4) {
         filter: blur(10px);
     }
     #back-btn{
-        left: 79px;
+        left: 88px;
     }
 }
-@media screen and (max-width: 328px){
+@media screen and (max-width: 330px){
     .box{
         margin: 55px auto;
         width: 250px;
     }
-
+    
     .box .imgBx{
         padding: 10px 30px;
 
      }
+}
+@media screen and (max-width: 285px){
+    #back-btn{
+        left: 50px;
+    }
 }
