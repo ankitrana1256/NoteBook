@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("./images/register.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 700px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 23px;
+}
+
+.box h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.box .input-group {
+    position: relative;
+}
+
+.box .input-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+}
+
+.box .input-group i {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transition: 0.5s;
+    color: #fff;
+    padding: 10px 0;
+    pointer-events: none;
+}
+
+.box .input-group label {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    transition: 0.5s;
+    color: #fff;
+    padding: 10px 0;
+    pointer-events: none;
+}
+
+.box .input-group input:focus~label,
+.box .input-group input:valid~label {
+    top: -18px;
+    left: 25px;
+    color: #03a9f4;
+    font-size: 14px;
+}
+
+.box .input-group input:focus+i,
+.box .input-group input:valid+i {
+    top: -18px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 14px;
+}
+
+.box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px 80px;
+    font-size: 18px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgb(151 175 174);
+    margin: 0px 95px;
+}
+
+.box a {
+    margin: 5px 120px;
+    color: #fff;
+}
+
+.box input[type="submit"]:hover {
+    box-shadow: none;
+    cursor: pointer;
+    position: relative;
+    background: #1d03f4;
+    top: 6px;
+}
+
+.error {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 60px;
+}
+
+ ::-webkit-scrollbar {
+    display: none;
+}
+/* media queries */
+@media only screen and (max-width:580px) {
+    .box{
+        width: 472px;
+    }
+    .box a{
+        margin: 5px 96px;
+    }
+    .box input[type="submit"]{
+        margin: 0 71px;
+    }
+    
+}
+@media only screen and (max-width:500px) {
+    .box{
+        width: 435px;
+    }
+    .box a{
+        margin: 5px 77px;
+    }
+    .box input[type="submit"]{
+        margin: 0 50px;
+    }
+    
+}
+@media only screen and (max-width:455px) {
+    .box{
+        width: 380px;
+    }
+    .box a{
+        margin: 5px 52px;
+    }
+    .box input[type="submit"]{
+        margin: 0 31px;
+    }
+    
+}
+@media only screen and (max-width:400px) {
+    .box{
+        width: 352px;
+        height: 670px;
+    }
+    .error{
+        height: 48px;
+    }
+    .box a{
+        margin: 5px 40px;
+    }
+    .box input[type="submit"]{
+        margin: -1px 31px;
+        padding: 10px 63px;
+    }
+    
+}
+@media only screen and (max-width:360px) {
+    .box{
+        width: 328px;
+        height: 617px;
+    }
+    .box .input-group input{
+        margin-bottom: 25px;
+    }
+    form{
+        position: relative;
+         top: -15px;
+    }
+    .error{
+        height: 43px;
+    }
+    .box a{
+        margin: 5px 23px;
+    }
+    .box input[type="submit"]{
+        margin: -1px 21px;
+        padding: 10px 55px;
+    }
+    
+}
+@media only screen and (max-width:340px){
+    .box{
+        width: 310px;
+    }
+    .error p b{
+        /* text-align: left; */
+        position: relative;
+        top: -20px;
+        font-size: 16px;
+    }
+
+}
