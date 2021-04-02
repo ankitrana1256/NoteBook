@@ -73,3 +73,56 @@ input:focus {
 strong{
     color: yellow;
 }
+
+/* media queries */
+@media only screen and (max-width:600px) {
+    .page{
+        width: 60vh;
+    }
+    .login-form-btn{
+        margin: -3px 0;
+    }
+
+}
+@media only screen and (max-width:485px) {
+    .page{
+        width: 54vh;
+    }
+
+}
+@media only screen and (max-width:415px) {
+    .page{
+        width: 50vh;
+    }
+    .login-form-btn{
+        margin: -12px 0;
+        margin-bottom: 8px;
+    }
+
+}
+@media only screen and (max-width:380px) {
+    .page{
+        width: 47vh;
+    }
+}
+@media only screen and (max-width:359px) {
+    .page{
+        width: 44vh;
+    }
+    .login-form-btn{
+        margin: -12px 0;
+        margin-bottom: 2px;
+    }
+}
+@media only screen and (max-width:340px) {
+    p{
+        position: relative;
+        top: -28px;
+        margin-bottom: -1rem;
+    }
+}
+@media only screen and (max-width:333px) {
+    .page{
+        width: 41vh;
+    }
+}
