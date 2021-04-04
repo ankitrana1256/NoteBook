@@ -78,58 +78,55 @@ strong {
 }
 
 /* media queries */
-@media only screen and (max-width:1050px) {
+@media only screen and (max-width:1126px) {
     .page{
-        width: 45%;
+        width: 495px;
     }
     
 }
-@media only screen and (max-width:780px) {
+@media only screen and (max-width:703px) {
     .page{
-        width: 50%;
+        width: 491px;
     }
     
 }
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:607px) {
     .page{
-        width: 55%;
+        width: 470px;
     }
     
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:540px) {
     .page{
-        width: 60%;
-    }
-}
-@media only screen and (max-width:560px) {
-    .page{
-        width: 60%;
-    }
-}
-@media only screen and (max-width:525px) {
-    .page{
-        width: 65%;
+        width: 424px;
     }
 }
 @media only screen and (max-width:485px) {
     .page{
-        width: 70%;
+       width: 387px;
     }
     
 }
 @media only screen and (max-width:475px) {
-    .page{
-        width: 80%;
-    }
+   
     .login-form-btn{
         margin: -12px 0;
         margin-bottom: 8px;
+    }
+    
+}
+@media only screen and (max-width:429px) {
+    .page{
+       width: 341px;
     }
     
 }
 @media only screen and (max-width:392px) {
     .page{
-        width: 85%;
+      
+        height: 565px;
+        margin: 12% auto;
+        padding: 1rem 1rem;
     }
     .login-form-btn{
         margin: -12px 0;
@@ -137,15 +134,10 @@ strong {
     }
     
 }
-@media only screen and (max-width:380px) {
+
+@media only screen and (max-width:362px) {
     .page{
-        width: 82%;
-        height: 80%;
-    }
-}
-@media only screen and (max-width:359px) {
-    .page{
-        width: 85%;
+        width:317px;
     }
     .login-form-btn{
         margin: -12px 0;
@@ -159,8 +151,35 @@ strong {
         margin-bottom: -1rem;
     }
 }
-@media only screen and (max-width:333px) {
+@media only screen and (max-width:337px) {
     .page{
-        width: 85%;
+        width: 298px;
+        margin: 13% auto;
+    }
+}
+@media only screen and (max-width:320px) {
+    .page{
+        width: 298px;
+        height: 510px;
+        margin: 14% auto;
+    }
+    input[type=text],
+    input[type=password] {
+        margin: 0px 0;
+    
+    }
+    .wrap-login-form-btn{
+        margin: -23px 0;
+    }
+    .fp{
+        padding-top: 27px;
+        /* padding: 30px 0; */
+        display: block;
+    }
+    .flex-col-c .p-t-155{
+        padding-top: 1px;
+    }
+    .text2{
+        padding-top: 1px;
     }
 }
