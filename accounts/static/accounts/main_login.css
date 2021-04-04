@@ -13,13 +13,16 @@ body {
 .page {
     background: rgba(169, 228, 233, 0.5);
     padding: 3rem 1.5rem;
-    height: 82vh;
-    width: 70vh;
+    height: 100%;
+    width: 30%;
+    /* height: 85vh; */
+    /* width: 70vh; */
     border-radius: 40px;
     border: 2px solid #000000;
     margin: 4% auto;
     text-align: center;
 }
+
 
 input[type=text],
 input[type=password] {
@@ -65,49 +68,84 @@ input {
 }
 
 input:focus {
-    outline: none !important;
+    outline: none;
     border-color: #719ECE;
     box-shadow: 0 0 10px #719ECE;
 }
 
-strong{
+strong {
     color: yellow;
 }
 
 /* media queries */
+@media only screen and (max-width:1050px) {
+    .page{
+        width: 45%;
+    }
+    
+}
+@media only screen and (max-width:780px) {
+    .page{
+        width: 50%;
+    }
+    
+}
+@media only screen and (max-width:700px) {
+    .page{
+        width: 55%;
+    }
+    
+}
 @media only screen and (max-width:600px) {
     .page{
-        width: 60vh;
+        width: 60%;
     }
-    .login-form-btn{
-        margin: -3px 0;
+}
+@media only screen and (max-width:560px) {
+    .page{
+        width: 60%;
     }
-
+}
+@media only screen and (max-width:525px) {
+    .page{
+        width: 65%;
+    }
 }
 @media only screen and (max-width:485px) {
     .page{
-        width: 54vh;
+        width: 70%;
     }
-
+    
 }
-@media only screen and (max-width:415px) {
+@media only screen and (max-width:475px) {
     .page{
-        width: 50vh;
+        width: 80%;
     }
     .login-form-btn{
         margin: -12px 0;
         margin-bottom: 8px;
     }
-
+    
+}
+@media only screen and (max-width:392px) {
+    .page{
+        width: 85%;
+    }
+    .login-form-btn{
+        margin: -12px 0;
+        margin-bottom: 8px;
+    }
+    
 }
 @media only screen and (max-width:380px) {
     .page{
-        width: 47vh;
+        width: 82%;
+        height: 80%;
     }
 }
 @media only screen and (max-width:359px) {
     .page{
-        width: 44vh;
+        width: 85%;
     }
     .login-form-btn{
         margin: -12px 0;
@@ -123,6 +161,6 @@ strong{
 }
 @media only screen and (max-width:333px) {
     .page{
-        width: 41vh;
+        width: 85%;
     }
 }

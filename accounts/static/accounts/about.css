@@ -315,7 +315,7 @@ a:hover span:nth-child(4) {
 @media screen and (max-width: 710px)
 {
     .neon{
-        left: 35%;
+        left: 56%;
     }
     header{
         height: 60px;
@@ -325,7 +325,7 @@ a:hover span:nth-child(4) {
         display: block;
     }
     .box{
-        margin: 55px 176px;
+        margin: 55px 307px;
         width: 300px;
     }
     
@@ -337,122 +337,125 @@ a:hover span:nth-child(4) {
          display: block;
          position: absolute;
          top: 1018px;
-         left: 250px;
+         left: 404px;
      }
 }
-@media screen and (max-width: 630px){
+@media screen and (max-width: 648px){
     .neon{
-        left: 45%;
-    }
-    #back-btn{
-        left: 241px;
-    }
-}
-@media screen and (max-width: 600px){
-    .neon{
-        left: 45%;
-    }
-    #back-btn{
-        left: 220px;
+        left: 51%;
     }
     .box{
-        margin: 55px 118px;
+        margin: 55px 207px;
+    }
+    #back-btn{
+        left: 300px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .neon{
+        left: 50%;
+    }
+    #back-btn{
+        left: 262px;
+    }
+    .box{
+        margin: 55px 171px;
     }
     
 }
-@media screen and (max-width: 585px){
+/* @media screen and (max-width: 585px){
     #back-btn{
         left: 207px;
     }
-}
+} */
 
 @media screen and (max-width: 557px){
     .neon{
         font-size: 2.5em;
+        left: 45%;
+    }
+    .box{
+        margin: 55px 146px;
     }
     #back-btn{
-        left: 198px;
+        left: 242px;
     }
 }
-@media screen and (max-width: 520px){
+@media screen and (max-width: 517px){
     .box{
-        margin: 55px 90px;
+        margin: 55px 110px;
     }
     #back-btn{
-        left: 170px;
+        left: 211px;
     }
     
 
-}
-@media screen and (max-width: 498px){
-    #back-btn{
-        left: 164px;
-    }
 }
 @media screen and (max-width: 475px){
     .neon{
         font-size: 2em;
     }
-    /* #back-btn{
-        left: 139px;
-    } */
+    #back-btn{
+        left: 204px;
+    }
 }
-@media screen and (max-width: 460px){
+
+@media screen and (max-width: 437px){
+    .box{
+        margin: 55px 102px;
+    }
+    #back-btn{
+        left: 199px;
+    }
+}
+
+@media screen and (max-width: 375px){
     .neon{
-        font-size: 1.67em;
+        font-size: 1.5em;
+    }
+    .box{
+        width: 264px;
+        margin: 55px 77px;
     }
     #back-btn{
         left: 157px;
     }
 }
-@media screen and (max-width: 437px){
-    .box{
-        margin: 55px 50px;
-    }
-    #back-btn{
-        left: 130px;
-    }
-}
-@media screen and (max-width: 417px){
-    #back-btn{
-        left: 128px;
-    }
-}
-@media screen and (max-width: 375px){
-    #back-btn{
-        left: 118px;
-    }
-}
-@media screen and (max-width: 369px){
-    .box{
-        margin: 55px 20px;
-    }
-    #back-btn{
-        left: 99px;
-    }
-}
-@media screen and (max-width: 335px){
+
+@media screen and (max-width: 357px){
     .neon{
-        font-size: 1.5em;
-        /* padding: 10px; */
+        font-size: 1.43em;
     }
     .neon::before{
         filter: blur(10px);
     }
+    .box{
+        width: 222px;
+        margin: 55px 82px;
+    }
+    .box  .imgBx{
+        padding: 10px 28px;
+    }
     #back-btn{
-        left: 88px;
+        left: 139px;
     }
 }
 @media screen and (max-width: 330px){
+    .neon{
+        left: 50%;
+    }
     .box{
-        margin: 55px auto;
-        width: 250px;
+        margin: 55px 76px;
     }
     
     .box .imgBx{
         padding: 10px 30px;
 
      }
+     #back-btn{
+        left: 128px;
+    }
 }
 @media screen and (max-width: 285px){
     #back-btn{
