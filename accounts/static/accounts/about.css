@@ -315,163 +315,113 @@ a:hover span:nth-child(4) {
 @media screen and (max-width: 710px)
 {
     .neon{
-        left: 62%;
-    }
-    header{
-        height: 60px;
+        top: -78px;
+        left: 39%;
+        /* margin-bottom: 165px; */
     }
     #roles{
-        height: 600px;
-        display: block;
+        position: relative;
+        top: -192px;
+        flex-wrap: wrap;
     }
     .box{
-        margin: 55px 262px;
-        width: 436px;
+        width: 356px;
+        height: 240px;
     }
-    
     .box .imgBx{
-        padding: 10px 91px;
-
-     }
-     #back-btn{
-         display: block;
-         position: absolute;
-         top: 1018px;
-         left: 418px;
-     }
-}
-@media screen and (max-width: 648px){
-    .neon{
-        left: 56%;
-    }
-    .box{
-        margin: 55px 199px;
+        padding:15px 55px;
+        padding-top: 30px;
+        padding-bottom: 10px;
     }
     #back-btn{
-        left: 363px;
+        position: absolute;
+        top: 1191px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
-
-@media screen and (max-width: 600px){
+@media screen and (max-width:588px) {
     .neon{
-        left: 58%;
-    }
-    #back-btn{
-        left: 262px;
-    }
-    .box{
-        margin: 55px 153px;
+        font-size: 2.5em;
     }
     
 }
-/* @media screen and (max-width: 585px){
-    #back-btn{
-        left: 207px;
+@media screen and (max-width:513px) {
+    .neon{
+        font-size: 2.5em;
+        left: 43%;
     }
-} */
-
-@media screen and (max-width: 557px){
+    
+}
+@media screen and (max-width:471px) {
     .neon{
         font-size: 2.5em;
         left: 49%;
-    }
-    .box{
-        margin: 55px 93px;
-    }
-    #back-btn{
-        left: 209px;
-    }
-}
-@media screen and (max-width: 517px){
-    .box{
-        margin: 55px 67px;
-    }
-    #back-btn{
-        left: 229px;
+        top: -42px;
     }
     
-
 }
-@media screen and (max-width: 475px){
-    .box{
-        margin: 55px 40px;
+@media screen and (max-width:455px) {
+    .neon{
+        font-size: 2.4em;
     }
+    
+}
+@media screen and (max-width:439px) {
+    .neon{
+        font-size: 2.32em;
+    }
+    
+}
+@media screen and (max-width:429px) {
+    .neon{
+        font-size: 2.21em;
+        left: 49%;
+        top: -42px;
+    }
+    
+}
+@media screen and (max-width:409px) {
+    .neon{
+        font-size: 2.1em;
+    }
+    #roles{
+        top: ;
+    }
+    
+}
+@media screen and (max-width:392px) {
     .neon{
         font-size: 2em;
     }
-    #back-btn{
-        left: 207px;
-    }
+    
 }
-
-@media screen and (max-width: 442px){
-    .box{
-        margin: 55px 47px;
-        width: 363px;
+@media screen and (max-width:370px) {
+    .neon{
+        font-size: 1.90em;
     }
     
-    .box .imgBx{
-        padding: 10px 61px;
-
-     }
-    #back-btn{
-        left: 176px;
-    }
 }
-
-@media screen and (max-width: 379px){
+@media screen and (max-width:358px) {
     .neon{
-        font-size: 1.5em;
-    }
-    .box{
-        width: 300px;
-        margin: 55px 57px;
+        font-size: 1.80em;
     }
     .box .imgBx{
-        padding: 10px 31px;
-
-     }
-    #back-btn{
-        left: 152px;
-    }
-}
-
-@media screen and (max-width: 357px){
-    .neon{
-        font-size: 1.43em;
-    }
-    .neon::before{
-        filter: blur(10px);
-    }
-    .box{
-        width: 222px;
-        margin: 55px 82px;
-    }
-    .box  .imgBx{
-        padding: 10px 28px;
-    }
-    #back-btn{
-        left: 139px;
-    }
-}
-@media screen and (max-width: 330px){
-    .neon{
-        left: 50%;
-    }
-    .box{
-        margin: 55px 76px;
+        padding:15px 35px;
+        padding-top: 29px;
     }
     
-    .box .imgBx{
-        padding: 10px 30px;
-
-     }
-     #back-btn{
-        left: 128px;
-    }
 }
-@media screen and (max-width: 285px){
-    #back-btn{
-        left: 50px;
+@media screen and (max-width:341px) {
+    .neon{
+        font-size: 1.75em;
     }
+    
+}
+@media screen and (max-width:333px) {
+    .neon{
+        font-size: 1.60em;
+    }
+    
 }
