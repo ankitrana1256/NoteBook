@@ -1,0 +1,401 @@
+
+@media screen and (max-width:1300px) {
+    #left {
+        left: -101px;
+    }
+
+    #right {
+        display: flex;
+        flex-wrap: wrap;
+        left: 138px;
+        margin-left: 0;
+        width: 66%;
+        top: 266px;
+    }
+
+    .topic {
+        padding: 0px 30px 0px 30px;
+    }
+
+    table {
+        position: relative;
+        top: -149px
+    }
+
+    table,
+    td {
+        padding: 16px;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1217px) {
+    #right {
+        width: 54%;
+    }
+}
+
+@media screen and (max-width:1184px) {
+    .heading {
+        left: 345px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width:1148px) {
+    #right {
+        width: 46%;
+
+    }
+
+}
+
+@media screen and (max-width:1090px) {
+    nav {
+        left: 0px;
+    }
+
+    #right {
+        /* left: -378px; */
+        left: 52px;
+        /* left: -359px; */
+        width: 50%;
+        opacity: 1;
+        padding: 0px 504px 100px 50px;
+        /* border: 2px solid #000; */
+        top: 155px;
+    }
+
+    #left {
+
+        left: -131px;
+    }
+
+    .topic {
+        position: relative;
+        top: -52px;
+        display: inline-block;
+        width: 148px;
+        margin: 50px 20px;
+        padding: 16px;
+        /* border: 2px solid red; */
+    }
+
+    .topic i {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    nav {
+        position: relative;
+        width: 100vw;
+        left: 276px;
+    }
+
+    #right {
+        left: -378px;
+    }
+
+    .navbar {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #000;
+        height: 100vh;
+        z-index: 5;
+        width: 100%;
+        display: flex;
+        left: -10px;
+        padding-right: 173px;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 94% -13%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+        z-index: 5;
+    }
+
+
+
+    .nav-links li {
+        padding-bottom: 4rem;
+        padding-top: 4.5rem;
+        position: relative;
+        right: 114px;
+    }
+
+    .nav-links li a {
+        font-size: 25px;
+
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.6s ease 0.1s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.6s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.6s ease 0.3s;
+    }
+
+    .nav-links li:nth-child(4) {
+        transition: all 0.6s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(5) {
+        transition: all 0.6s ease 0.5s;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width:934px) {
+    .heading {
+        left: 438px;
+    }
+    #right {
+        left: -334px;
+    }
+    .user,.user1{
+        font-size: large;
+    }
+    
+}
+@media screen and (max-width:887px) {
+    #right {
+        left: -334px;
+    }
+    #left {
+        left: -138px;
+    }
+    
+}
+@media screen and (max-width:870px){
+    #right{
+        padding: 0px 422px 100px 50px;
+    }
+    
+}
+@media screen and (max-width:839px){
+    #right {
+        left: -284px;
+    }
+    .heading {
+        left: 465px;
+    }
+    nav{
+        left: 241px;
+    }
+}
+@media screen and (max-width:793px){
+    #left{
+        display: none;
+    }
+    #right{
+        left: -434px;
+        top: 163px;
+        padding: 0px 498px 100px 50px;
+    }
+    nav{
+        left: 266px;
+    }
+    
+}
+@media screen and (max-width:700px){
+    #right{
+        left: -397px;
+    }
+    .heading {
+        font-size: 20px;
+        left: 582px;
+    }
+    
+}
+@media screen and (max-width:622px){
+    #right {
+        left: -346px;
+    }
+    
+    
+}
+@media screen and (max-width:595px){
+    .heading{
+        left: 617px;
+    }
+    #right {
+        left: -323px;
+    }
+    .nav-links{
+        padding-right: 74px;
+    }
+    
+    
+}
+@media screen and (max-width:545px){
+    #right {
+        left: -306px;
+    }
+    
+    
+}
+@media screen and (max-width:521px){
+    #right {
+        padding: 0px 419px 100px 50px;
+        margin: 85px 0;
+    }
+    nav {
+        left: 240px;
+    }
+    .greet{
+        display: block;
+        width: 335px;
+        left:77px;
+    }
+    .heading {
+        left: 549px;
+        top: 50px;
+    }
+    
+    
+}
+@media screen and (max-width:505px){
+    .nav-links{
+        padding-right: 5px;
+    }
+}
+@media screen and (max-width:487px){
+    #right {
+        margin-left: 53px;
+    }
+    nav {
+        left: 240px;
+    }
+    .greet{
+        display: block;
+        width: 335px;
+        left:77px;
+    }
+    .heading {
+        left: 549px;
+        top: 50px;
+    }
+    
+    
+}
+@media screen and (max-width:467px){
+    #right{
+        margin-left: 68px;
+        padding: 0px 288px 100px 50px;
+    }
+    nav {
+        left: 203px;
+    }
+}
+@media screen and (max-width:447px){
+    .heading{
+        left: 596px;
+    }
+    .greet{
+        width: 279px;
+    }
+    .fa-2x {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width:427px){
+    .nav-links li{
+        right: 56px;
+    }
+    
+}
+@media screen and (max-width:401px){
+    
+    .greet{
+        left: 49px;
+        width: 279px;
+    }
+    .fa-2x {
+        font-size: 1.5em;
+    }
+    #right{
+        margin-left: 121px;
+    }
+    .heading {
+        font-size: 18px;
+        left: 626px;
+    }
+    nav {
+        left: 229px;
+    }
+}
+@media screen and (max-width:369px){
+    .nav-links li{
+        right: 0px;
+    }
+    
+}
+@media screen and (max-width:364px){
+    .heading {
+        font-size: 18px;
+        left: 657px;
+    }
+   
+}
+@media screen and (max-width:363px){
+    .greet{
+        left: 24px;
+    }
+    .heading {
+        left: 713px;
+    }
+    #right {
+        margin-left: 201px;
+    }
+    nav{
+        left: 266px;
+    }
+   
+}
+@media screen and (max-width:344px){
+    .fa-3x {
+        font-size: 2em;
+        position: relative;
+        top: 10px;
+    }
+    
+}

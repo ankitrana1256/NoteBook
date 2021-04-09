@@ -1,0 +1,250 @@
+@import url('https://font.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: #161623;
+    background: url("/static/accounts/images/notes2.jpg") fixed no-repeat;
+    background-size: cover;
+}
+
+
+/* Navigation bar*/
+
+nav {
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    height: 7%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    padding-left: 25px;
+    backdrop-filter: blur(5px);
+    margin: 10px;
+    text-align: right;
+    z-index: 3;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    padding-top: 15px;
+    padding-left: 0.1px;
+}
+
+nav li a:hover {
+    border-radius: 10px;
+    background-color: white;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+}
+
+.fa-phoenix-framework {
+    float: left;
+}
+
+.fa-sign-out-alt {
+    color: red;
+}
+
+.fa-user-shield {
+    color: green;
+}
+
+.fa-user-edit {
+    color: orangered;
+}
+
+.fa-home {
+    color: lightblue
+}
+
+.fa-edit {
+    color: violet;
+}
+
+.logo {
+    color: yellow;
+}
+
+
+/* end */
+
+
+/* Username */
+
+.greet {
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: white;
+    overflow: hidden;
+    z-index: 2;
+    height: 7%;
+    left: 0;
+    right: 0;
+    top: 85px;
+    bottom: 0;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    margin: 10px;
+    margin-right: 70%;
+    text-align: center;
+    padding-top: 10px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.user {
+    color: black;
+    font-size: x-large;
+}
+
+.user1 {
+    color: orangered;
+    font-size: x-large;
+}
+
+
+/* end */
+#left {
+    height: 70vh;
+    width: 20%;
+    top: 220px;
+    z-index: 2;
+    float: left;
+    position: fixed;
+    left: 0px;
+
+}
+
+/* right */
+
+#main-heading {
+    position: absolute;
+    top: 100px;
+    width: 900px;
+    right: 100px;
+    height: 2rem;
+}
+
+#right {
+    height: 70vh;
+    width: 65%;
+    margin-left: -10rem;
+    position: relative;
+    top: 155px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    /* border: 2px solid blue; */
+    overflow-y: scroll;
+    float: right;
+    right: -300px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.heading {
+    color: antiquewhite;
+    text-align: center;
+    left: 150px;
+    /* right: 700px; */
+    position: absolute;
+    /* text-decoration: underline; */
+}
+
+.topic {
+    color: white;
+    text-align: left;
+    padding: 50px 30px 30px 30px;
+    /* padding: 50px 30px; */
+}
+
+table {
+    width: 750px;
+    box-shadow: -6px 12px 12px -6px rgba(255, 255, 255, 0.5);
+}
+
+table,
+td {
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+th {
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+td {
+    font-size: 18px;
+    color: white;
+}
+
+th {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+tr:nth-child(odd):hover {
+    background-color: lightgreen;
+    color: #000;
+    transform: scale(1);
+    transition: transform 3s ease-in;
+}
+
+tr:nth-child(even):hover {
+    background-color: slateblue;
+    color: #000;
+    transform: scale(1);
+    transition: transform 3s ease-in;
+}
+
+.btn {
+    display: block;
+    margin: auto auto;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 23px;
+    cursor: pointer;
+    transform: rotate(0deg) skewX(0deg) translate(0, 0);
+    transition: 0.5s;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1), -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.btn:hover {
+    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1), inset -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+

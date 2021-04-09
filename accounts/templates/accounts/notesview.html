@@ -1,141 +1,57 @@
-{% extends 'accounts/home.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook</title>
 
-{% block body_block %}
-    {% block head_block %}
-        <style>
-            body {
-                background: url("/static/accounts/images/notes2.jpg") fixed no-repeat;
-                background-size: cover;
-            }
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
 
-            #left {
-                height: 70vh;
-                width: 20%;
-                top: 220px;
-                z-index: 5;
-                float: left;
-                position: fixed;
-                left: 0px;
+    <link rel="shortcut icon" href="{% static 'accounts/favicon.ico' %}" />
+    <link rel="stylesheet" href="{% static 'accounts/notes.css' %}">
+    <link rel="stylesheet" href="{% static 'accounts/media-query.css' %}">
+</head>
 
-            }
+<body>
 
-            /* right */
+    <!--Navbar-->
+    <div>
+        <nav>
+            <div class="navbar">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <i class="fab fa-phoenix-framework fa-3x"><strong class="logo">N</strong>ote<strong
+                    class="logo">B</strong>ook</i>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}" aria-current="page"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{% url 'about' %}"><i class="fas fa-edit"></i> About</a></li>
 
-            #main-heading {
-                position: absolute;
-                top: 100px;
-                width: 900px;
-                right: 100px;
-                height: 2rem;
-            }
+                <li><a href="/password_change/"><i class="fas fa-user-edit"></i> Change Password</a></li>
 
-            #right {
-                height: 70vh;
-                width: 65%;
-                margin-left: -10rem;
-                position: relative;
-                top: 155px;
-                padding-left: 30px;
-                padding-bottom: 10px;
-                /* border: 2px solid blue; */
-                overflow-y: scroll;
-                float: right;
-                right: -300px;
-            }
+                <li><a href="/admin/"><i class="fas fa-user-shield"></i> Admin</a></li>
 
-            .heading {
-                color: antiquewhite;
-                text-align: center;
-                left: 150px;
-                /* right: 700px; */
-                position: absolute;
-                /* text-decoration: underline; */
-            }
+                <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--end-->
 
-            .topic {
-                color: white;
-                text-align: left;
-                padding: 50px 30px 30px 30px;
-                /* padding: 50px 30px; */
-            }
-
-            table {
-                width: 750px;
-                box-shadow: -6px 12px 12px -6px rgba(255, 255, 255, 0.5);
-            }
-
-            table,
-            td {
-                padding: 20px;
-                text-align: center;
-                cursor: pointer;
-                color: white;
-            }
-
-            th {
-                padding: 20px;
-                text-align: center;
-                cursor: pointer;
-                color: antiquewhite;
-            }
-
-            td {
-                font-size: 18px;
-                color: white;
-            }
-
-            th {
-                font-size: 20px;
-                font-weight: bolder;
-            }
-
-            tr:nth-child(odd):hover {
-                background-color: lightgreen;
-                color: #000;
-                transform: scale(1);
-                transition: transform 3s ease-in;
-            }
-
-            tr:nth-child(even):hover {
-                background-color: slateblue;
-                color: #000;
-                transform: scale(1);
-                transition: transform 3s ease-in;
-            }
-
-            .btn {
-                display: block;
-                margin: auto auto;
-                border: none;
-                outline: none;
-                font-size: 1rem;
-                font-weight: 200;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                width: 100%;
-                padding: 10px 20px;
-                border-radius: 23px;
-                cursor: pointer;
-                transform: rotate(0deg) skewX(0deg) translate(0, 0);
-                transition: 0.5s;
-                box-shadow: -2px -2px 8px rgba(255, 255, 255, 1), -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
-            }
-
-
-            .btn:hover {
-                box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1), inset -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), inset 2px 2px 8px rgba(0, 0, 0, 0.15);
-            }
-
-
-            /* right end */
-        </style>
-    {% endblock %}
+    <!--user-->
     <div class="greet">
         <strong class="user">
             WELCOME,</strong><strong class="user1"> {{ request.user }} <i
-            class="fas fa-user-graduate fa-1x"></i></strong>
+                class="fas fa-user-graduate fa-1x"></i></strong>
         </strong>
     </div>
+    <!--end-->
+
     <div id="left">
         <img style="height: 300px;
         width: 300px;
@@ -153,6 +69,7 @@
         <h2 class="heading"><a href="\"><i class="far fa-arrow-alt-circle-left fa-2x"></i></a>{{ info.subject_name }}
             / {{ info.subject_code }}</h2><br>
     </div>
+
     <div id="right">
         {% if Note1 %}
             <h2 class="topic"><i class="fas fa-university"></i> Unit-1</h2>
@@ -301,4 +218,19 @@
         {% endif %}
 
     </div>
-{% endblock %}
+        <script>
+            const navbar = document.querySelector(".navbar");
+            const navLinks = document.querySelector(".nav-links");
+            const links = document.querySelectorAll(".nav-links li");
+
+            navbar.addEventListener("click", () => {
+                navLinks.classList.toggle("open");
+                links.forEach(link => {
+                    link.classList.toggle("fade");
+                });
+            });
+        </script>
+
+</body>
+
+</html>
