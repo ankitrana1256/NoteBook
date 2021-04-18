@@ -133,7 +133,7 @@
         flex-direction: column;
         clip-path: circle(100px at 90% -10%);
         /* clip-path: circle(100px at 90% -10%); */
-        -webkit-clip-path: circle(100px at 94% -16%);
+        -webkit-clip-path: circle(100px at 94% -18%);
         transition: all 1s ease-out;
         pointer-events: none;
     }
@@ -365,7 +365,7 @@
         left: 582px;
     }
     nav {
-        left: 262px;
+        left: 215px;
     }
     .greet{
         display: block;
@@ -379,6 +379,13 @@
     table,td{
         padding: 16px 0;
     }
+    .line{
+        position: relative;
+        left: 19px;
+    }
+    /* .nav-links {
+        clip-path: circle(913px at 207% -10%);
+    } */
     
     
 }
@@ -390,13 +397,17 @@
         left: 581px;
     }
     nav {
-        left: 244px;
+        left: 208px;
     }
     .nav-links.open {
         -webkit-clip-path: circle(913px at 219% -10%);
     }
     #right{
         left: -233px;
+    }
+    .line{
+        position: relative;
+        left: 23px;
     }
 }
 @media screen and (max-width:451px){
