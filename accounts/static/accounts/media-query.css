@@ -441,6 +441,9 @@
     #right{
         left: -204px;
     }
+    nav{
+        left: 194px;
+    }
     
 }
 @media screen and (max-width:403px){
@@ -452,31 +455,25 @@
     .fa-2x {
         font-size: 1.5em;
     }
-    #right{
-        left: -196px;
+    #right {
+        padding: 0px 280px 100px 0px;
+        left: -217px;
     }
     .heading {
         font-size: 18px;
         left: 702px;
     }
     nav {
-        left: 231px;
+        left: 128px;
     }
 }
 @media screen and (max-width:389px){
-    td,th,a{
-        font-size: 14px;
-        padding: 10px 0;
-    }
-    .btn {
-        padding: 10px 3px;
-        width: 60%;
-    }
+    
     #right{
-        left: -168px;
+        left: -192px;
     }
     nav{
-        left: 222px;
+        left: 148px;
     }
     
 }
@@ -487,22 +484,20 @@
     }
     
 }
-@media screen and (max-width:365px){
-    .heading {
-        font-size: 18px;
-        left: 714px;
-    }
-   
-}
+
 @media screen and (max-width:363px){
+    .heading {
+        font-size: 14px;
+        left: 756px;
+    }
     .greet{
-        left: 24px;
+        left: 42px;
     }
     #right {
-        left: -135px;
+        left: -173px;
     }
     nav{
-        left: 251px;
+        left: 162px;
     }
     .nav-links.open {
         -webkit-clip-path: circle(1202px at 264% -10%);
@@ -516,4 +511,9 @@
         top: 10px;
     }
     
+}
+@media screen and (max-width:323px){
+    .greet{
+        left: 21px;
+    }
 }
