@@ -123,7 +123,7 @@
 
     .nav-links {
         position: fixed;
-        background: #000;
+        background: black;
         height: 100vh;
         z-index: 5;
         width: 100%;
@@ -132,14 +132,16 @@
         padding-right: 173px;
         flex-direction: column;
         clip-path: circle(100px at 90% -10%);
-        -webkit-clip-path: circle(100px at 94% -13%);
+        /* clip-path: circle(100px at 90% -10%); */
+        -webkit-clip-path: circle(100px at 94% -16%);
         transition: all 1s ease-out;
         pointer-events: none;
     }
 
     .nav-links.open {
         clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
+        /* -webkit-clip-path: circle(724px at 90% -10%); */
+        -webkit-clip-path: circle(723px at 103% -10%);
         pointer-events: all;
         z-index: 5;
     }
@@ -147,10 +149,10 @@
 
 
     .nav-links li {
-        padding-bottom: 4rem;
+        /* padding-bottom: 4rem; */
         padding-top: 4.5rem;
         position: relative;
-        right: 114px;
+        right: 0px;
     }
 
     .nav-links li a {
@@ -184,7 +186,7 @@
 }
 
 
-@media screen and (max-width:934px) {
+@media screen and (max-width:942px) {
     .heading {
         left: 438px;
     }
@@ -232,13 +234,27 @@
         padding: 0px 498px 100px 50px;
     }
     nav{
-        left: 266px;
+        left: 283px;
+    }
+    .nav-links li {
+        right: -114px;
+    }
+    .nav-links.open {
+        -webkit-clip-path: circle(890px at 151% -10%);
     }
     
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:757px){
+    .heading {
+        left: 500px;
+    }
+}
+@media screen and (max-width:706px){
     #right{
         left: -397px;
+    }
+    nav{
+        top: -10px;
     }
     .heading {
         font-size: 20px;
@@ -246,13 +262,31 @@
     }
     
 }
-@media screen and (max-width:622px){
+@media screen and (max-width:687px){
+    .nav-links.open {
+        -webkit-clip-path: circle(890px at 163% -10%);
+    }
+}
+@media screen and (max-width:645px){
     #right {
-        left: -346px;
+        left: -361px;
     }
     
+}
+@media screen and (max-width:622px){
+    #right {
+        left: -320px;
+        padding-left: 0;
+    }
+    .nav-links li {
+        right: -160px;
+    }
+    .nav-links.open {
+        -webkit-clip-path: circle(890px at 179% -10%);
+    }
     
 }
+
 @media screen and (max-width:595px){
     .heading{
         left: 617px;
@@ -263,23 +297,37 @@
     .nav-links{
         padding-right: 74px;
     }
+    .nav-links li {
+        right: -63px;
+    }
+    .nav-links li a{
+        font-size: 20px;
+    }
+    .nav-links.open {
+        -webkit-clip-path: circle(890px at 188% -10%);
+    }
     
     
+}
+@media screen and (max-width:580px) {
+    #right {
+        left: -298px;
+    }
 }
 @media screen and (max-width:545px){
     #right {
         left: -306px;
-    }
-    
-    
+    }  
 }
-@media screen and (max-width:521px){
+
+@media screen and (max-width:535px){
     #right {
-        padding: 0px 419px 100px 50px;
+        padding: 0px 419px 100px 0px;
         margin: 85px 0;
+        left: -281px;
     }
     nav {
-        left: 240px;
+        left: 213px;
     }
     .greet{
         display: block;
@@ -290,20 +338,34 @@
         left: 549px;
         top: 50px;
     }
-    
-    
+    .nav-links.open {
+        -webkit-clip-path: circle(913px at 207% -10%);
+    }
 }
 @media screen and (max-width:505px){
     .nav-links{
         padding-right: 5px;
     }
+    .nav-links li {
+        right: 11px;
+    
+    }
+    #right{
+        left: -256px;
+    }
+
+    
 }
 @media screen and (max-width:487px){
     #right {
-        margin-left: 53px;
+        /* margin-left: 53px; */
+        left: -277px;
+    }
+    .heading{
+        left: 582px;
     }
     nav {
-        left: 240px;
+        left: 262px;
     }
     .greet{
         display: block;
@@ -314,19 +376,30 @@
         left: 549px;
         top: 50px;
     }
+    table,td{
+        padding: 16px 0;
+    }
     
     
 }
-@media screen and (max-width:467px){
-    #right{
-        margin-left: 68px;
-        padding: 0px 288px 100px 50px;
+@media screen and (max-width:471px){
+    .greet{
+        left: 37px;
+    }
+    .heading {
+        left: 581px;
     }
     nav {
-        left: 203px;
+        left: 244px;
+    }
+    .nav-links.open {
+        -webkit-clip-path: circle(913px at 219% -10%);
+    }
+    #right{
+        left: -233px;
     }
 }
-@media screen and (max-width:447px){
+@media screen and (max-width:451px){
     .heading{
         left: 596px;
     }
@@ -336,14 +409,41 @@
     .fa-2x {
         font-size: 1.5em;
     }
+    .nav-links.open {
+        -webkit-clip-path: circle(978px at 240% -10%);
+    }
+    th,td{
+        font-size: 18px;
+    }
+    #right{
+        left: -243px;
+    }
+    nav{
+        left: 217px;
+    }
 }
-@media screen and (max-width:427px){
-    .nav-links li{
-        right: 56px;
+@media screen and (max-width:438px){
+    #right{
+        left: -222px;
     }
     
 }
-@media screen and (max-width:401px){
+@media screen and (max-width:427px){
+    .nav-links li{
+        right: 10px;
+    }
+    .nav-links.open {
+        -webkit-clip-path: circle(978px at 251% -10%);
+    }
+    .heading{
+        left: 646px;
+    }
+    #right{
+        left: -204px;
+    }
+    
+}
+@media screen and (max-width:403px){
     
     .greet{
         left: 49px;
@@ -353,26 +453,44 @@
         font-size: 1.5em;
     }
     #right{
-        margin-left: 121px;
+        left: -196px;
     }
     .heading {
         font-size: 18px;
-        left: 626px;
+        left: 702px;
     }
     nav {
-        left: 229px;
+        left: 231px;
     }
 }
+@media screen and (max-width:389px){
+    td,th,a{
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    .btn {
+        padding: 10px 3px;
+        width: 60%;
+    }
+    #right{
+        left: -168px;
+    }
+    nav{
+        left: 222px;
+    }
+    
+}
 @media screen and (max-width:369px){
+    
     .nav-links li{
         right: 0px;
     }
     
 }
-@media screen and (max-width:364px){
+@media screen and (max-width:365px){
     .heading {
         font-size: 18px;
-        left: 657px;
+        left: 714px;
     }
    
 }
@@ -380,15 +498,15 @@
     .greet{
         left: 24px;
     }
-    .heading {
-        left: 713px;
-    }
     #right {
-        margin-left: 201px;
+        left: -135px;
     }
     nav{
-        left: 266px;
+        left: 251px;
     }
+    .nav-links.open {
+        -webkit-clip-path: circle(1202px at 264% -10%);
+    }    
    
 }
 @media screen and (max-width:344px){
