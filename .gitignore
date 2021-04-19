@@ -1,3 +1,2 @@
-venv/
-.idea/
-NoteBook/.env
+venv
+*.env
