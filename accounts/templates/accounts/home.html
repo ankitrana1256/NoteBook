@@ -3,6 +3,8 @@
 <head>
     {% load static %}
     <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Notebook{% endblock %}</title>
     <!--stylesheet-->
     <link rel="stylesheet" href="{% static 'accounts/homepage.css' %}">
@@ -17,30 +19,35 @@
     <link rel="shortcut icon" href="{% static 'accounts/favicon.ico' %}"/>
     {% block head_block %}
         <link rel="stylesheet" href="{% static 'accounts/home_background.css' %}">
-        <link rel="stylesheet" href="{% static 'accounts/media-query-home.css' %}">
+        <link rel="stylesheet" href="{% static 'accounts/media-query2.css' %}">
     {% endblock %}
 </head>
 
 <body>
 
-<!--Navbar-->
-<div>
-    <nav class="Navbar">
-        <ul>
-            <i class="fab fa-phoenix-framework fa-3x"><strong class="logo">N</strong>ote<strong class="logo">B</strong>ook</i>
-            <li><a href="{% url 'home' %}" aria-current="page"><i class="fas fa-home"></i> Home</a></li>
-            |
-            <li><a href="{% url 'about' %}"><i class="fas fa-edit"></i> About</a></li>
-            |
-            <li><a href="/password_change/"><i class="fas fa-user-edit"></i> Change Password</a></li>
-            |
-            <li><a href="/admin/"><i class="fas fa-user-shield"></i> Admin</a></li>
-            |
-            <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-        </ul>
-    </nav>
-</div>
-<!--end-->
+    <!--Navbar-->
+    <div>
+        <nav class="navs">
+            <div class="navbar">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <i class="fab fa-phoenix-framework fa-3x"><strong class="logo">N</strong>ote<strong
+                    class="logo">B</strong>ook</i>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}" aria-current="page"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{% url 'about' %}"><i class="fas fa-edit"></i> About</a></li>
+
+                <li><a href="/password_change/"><i class="fas fa-user-edit"></i> Change Password</a></li>
+
+                <li><a href="/admin/"><i class="fas fa-user-shield"></i> Admin</a></li>
+
+                <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--end-->
 
 {% block body_block %}
     <!--user-->
@@ -53,34 +60,69 @@
     <!--end-->
 
     <!--Radio here-->
-        <div id="sem-btn">
+
+    <div id="sem-btn2">
+        <ul>
+            <li id="filters">Filters
+                <ul>
+                    <form action="" method="Post" id="theForm">{% csrf_token %}
+                    <li> <input type="radio" name="sem" id="sem-1" class="first-row" value="1"
+                        onChange="autoSubmit();"><label for="sem-1">Sem-1</label></li>
+                    <li><input type="radio" name="sem" id="sem-2" class="first-row" value="2"
+                        onChange="autoSubmit();"><label for="sem-2">Sem-2</label></li>
+                    <li><input type="radio" name="sem" id="sem-3" class="first-row" value="3"
+                        onChange="autoSubmit();"><label for="sem-3">Sem-3</label></li>
+                    <li><input type="radio" name="sem" id="sem-4" class="first-row" value="4"
+                        onChange="autoSubmit();"><label for="sem-4">Sem-4</label></li>
+                    <li><input type="radio" name="sem" id="sem-5" class="second-row" value="5"
+                        onChange="autoSubmit();"><label for="sem-5">Sem-5</label></li>
+                    <li><input type="radio" name="sem" id="sem-6" class="second-row" value="6"
+                        onChange="autoSubmit();"><label for="sem-6">Sem-6</label></li>
+                    <li><input type="radio" name="sem" id="sem-7" class="second-row" value="7"
+                        onChange="autoSubmit();"><label for="sem-7">Sem-7</label></li>
+                    <li><input type="radio" name="sem" id="sem-8" class="second-row" value="8"
+                        onChange="autoSubmit();"><label for="sem-8">Sem-8</label></li>
+                    </form>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="sem-btn">
         <fieldset>
             <legend><b>Filters</b></legend>
             <form action="" method="Post" id="theForm">{% csrf_token %}
                 <span>
-            <input type="radio" name="sem" id="sem-1" value="1" onChange="autoSubmit();"><label for="sem-1">Sem-1</label>
-            </span>
+                    <input type="radio" name="sem" id="sem-1" class="first-row" value="1"
+                        onChange="autoSubmit();"><label for="sem-1">Sem-1</label>
+                </span>
                 <span>
-            <input type="radio" name="sem" id="sem-2" value="2" onChange="autoSubmit();"><label for="sem-2">Sem-2</label>
-            </span>
+                    <input type="radio" name="sem" id="sem-2" class="first-row" value="2"
+                        onChange="autoSubmit();"><label for="sem-2">Sem-2</label>
+                </span>
                 <span>
-            <input type="radio" name="sem" id="sem-3" value="3" onChange="autoSubmit();"><label for="sem-3">Sem-3</label>
-            </span>
+                    <input type="radio" name="sem" id="sem-3" class="first-row" value="3"
+                        onChange="autoSubmit();"><label for="sem-3">Sem-3</label>
+                </span>
                 <span>
-            <input type="radio" name="sem" id="sem-4" value="4" onChange="autoSubmit();"><label for="sem-4">Sem-4</label>
-            </span>
+                    <input type="radio" name="sem" id="sem-4" class="first-row" value="4"
+                        onChange="autoSubmit();"><label for="sem-4">Sem-4</label>
+                </span>
                 <span>
-            <input type="radio" name="sem" id="sem-5" value="5" onChange="autoSubmit();"><label for="sem-5">Sem-5</label>
-            </span>
+                    <input type="radio" name="sem" id="sem-5" class="second-row" value="5"
+                        onChange="autoSubmit();"><label for="sem-5">Sem-5</label>
+                </span>
                 <span>
-            <input type="radio" name="sem" id="sem-6" value="6" onChange="autoSubmit();"><label for="sem-6">Sem-6</label>
-            </span>
+                    <input type="radio" name="sem" id="sem-6" class="second-row" value="6"
+                        onChange="autoSubmit();"><label for="sem-6">Sem-6</label>
+                </span>
                 <span>
-            <input type="radio" name="sem" id="sem-7" value="7" onChange="autoSubmit();"><label for="sem-7">Sem-7</label>
-            </span>
+                    <input type="radio" name="sem" id="sem-7" class="second-row" value="7"
+                        onChange="autoSubmit();"><label for="sem-7">Sem-7</label>
+                </span>
                 <span>
-            <input type="radio" name="sem" id="sem-8" value="8" onChange="autoSubmit();"><label for="sem-8">Sem-8</label>
-            </span>
+                    <input type="radio" name="sem" id="sem-8" class="second-row" value="8"
+                        onChange="autoSubmit();"><label for="sem-8">Sem-8</label>
+                </span>
             </form>
         </fieldset>
     </div>
@@ -116,13 +158,22 @@
     });
 </script>
 <script src="{% static 'accounts/script.js' %}"></script>
-<script>
-function autoSubmit()
-{
-    var formObject = document.forms['theForm'];
-    formObject.submit();
-}
-</script>
+    <script>
+        function autoSubmit() {
+            var formObject = document.forms['theForm'];
+            formObject.submit();
+        }
+        const navbar = document.querySelector(".navbar");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        navbar.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+            links.forEach(link => {
+                link.classList.toggle("fade");
+            });
+        });
+    </script>
 {% endblock %}
 </body>
 
