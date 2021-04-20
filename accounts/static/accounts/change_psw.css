@@ -13,20 +13,19 @@ body {
 nav {
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-    z-index: 1;
     height: 7%;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    position: fixed;
+    /* position: fixed; */
     padding-left: 25px;
     backdrop-filter: blur(5px);
     margin: 10px;
     text-align: right;
     z-index: 3;
 }
+
 
 nav li {
     display: inline-block;
@@ -81,14 +80,20 @@ a {
 
 .login-wrapper {
     height: 100vh;
-    width: 100vw;
-    display: flex;
+    width: 40vw;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    position: absolute;
+     top: 7rem; 
+     left: 35rem; 
+     /* border: 2px solid; */
+
 }
 
 .form {
     position: relative;
+    top: 28px;
     width: 100%;
     max-width: 380px;
     padding: 80px 40px;
@@ -99,9 +104,10 @@ a {
 }
 
 .form img {
-    position: absolute;
-    top: -50px;
-    left: 140px;
+    position: relative;
+    top: -135px;
+    /* position: fixed; */
+    left: 96px;
     width: 100px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
@@ -112,10 +118,14 @@ a {
     letter-spacing: 1px;
     margin-bottom: 2rem;
     color: #ff652f;
+    position: absolute;
+    top: 5.9rem;
+    left: 5rem;
 }
 
 .form .input-group {
     position: relative;
+    top: -23px;
 }
 
 .form .input-group input {
@@ -157,6 +167,10 @@ a {
 .form .input-group input:valid+label {
     transform: translateY(-18px);
     font-size: 0.8rem;
+}
+.form #incorrect{
+    position: relative;
+    top: 23px;
 }
 
 .btn {

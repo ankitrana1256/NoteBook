@@ -1,0 +1,208 @@
+@media screen and (max-width: 1000px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        background: rgb(20, 20, 20);
+        margin: 5px;
+        position: relative;
+        left: 39px;
+    }
+
+    nav {
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        background: rgba(255, 255, 255, 0.1);
+        height: 7%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: fixed;
+        padding-left: 25px;
+        backdrop-filter: blur(5px);
+        margin: 10px;
+        text-align: right;
+        z-index: 3;
+    }
+    .navbar {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    .nav-links {
+        position: relative;
+        top: -57px;
+        background: black;
+        height: 100vh;
+        z-index: 5;
+        width: 100%;
+        display: flex;
+        left: 11px;
+        padding-right: 173px;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        /* clip-path: circle(100px at 90% -10%); */
+        -webkit-clip-path: circle(100px at 94% -18%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        /* -webkit-clip-path: circle(724px at 90% -10%); */
+        -webkit-clip-path: circle(811px at 124% -16%);
+        pointer-events: all;
+        z-index: 5;
+    }
+
+    .nav-links li {
+        /* padding-bottom: 4rem; */
+        padding-top: 4.5rem;
+        position: relative;
+        right: 0px;
+    }
+    nav li{
+        display: block;
+    }
+
+    .nav-links li a {
+        font-size: 25px;
+        color: white;
+        position: relative;
+        left: 93px;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.6s ease 0.1s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.6s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.6s ease 0.3s;
+    }
+
+    .nav-links li:nth-child(4) {
+        transition: all 0.6s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(5) {
+        transition: all 0.6s ease 0.5s;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+    .login-wrapper{
+        left: 18rem;
+    }
+}
+@media screen and (max-width:952px){
+    .login-wrapper{
+        padding: 20px;
+        width: 50vw;
+    }
+    
+}
+@media screen and (max-width:804px){
+    .nav-links.open{
+        -webkit-clip-path: circle(857px at 144% -16%);
+    }
+    
+}
+@media screen and (max-width:734px){
+    .nav-links.open {
+        -webkit-clip-path: circle(928px at 161% -16%);
+    }
+    .login-wrapper{
+        padding: 20px;
+        width: 60vw;
+        left: 12rem;
+    }
+    
+}
+@media screen and (max-width:657px){
+    .nav-links.open {
+        -webkit-clip-path: circle(1016px at 188% -16%);
+    }
+    .line{
+        left: 25px;
+    }
+    .login-wrapper{
+        left: 8rem;
+    }
+    
+}
+@media screen and (max-width:596px){
+    .login-wrapper{
+        width: 79vw;
+    }
+    
+}
+@media screen and (max-width:589px){
+    .nav-links.open {
+        -webkit-clip-path: circle(1250px at 188% -16%);
+    }
+    .nav-links li a{
+        left: -4px;
+    }
+    
+}
+@media screen and (max-width:526px){
+    .login-wrapper{
+        left: 4rem;
+    }
+    
+}
+@media screen and (max-width:464px){
+    .login-wrapper{
+        left: 4rem;
+    }
+    .form img{
+        left: 71px;
+    }
+    .form h2{
+        left: 3rem;
+    }
+    
+}
+@media screen and (max-width:423px){
+    .nav-links li a{
+        left: 64px;
+    }
+    nav{
+        left: -4px;
+    }
+   
+}
+@media screen and (max-width:409px){
+    .form img{
+        left: 48px;
+    }
+    .form h2{
+        left: 2rem;
+    }
+    
+}
+@media screen and (max-width:387px){
+    .login-wrapper{
+        left: 0rem;
+        /* border: 2px solid; */
+        padding: 0;
+        padding-left: 30px;
+    }
+    .form{
+        width: 110%;
+    }
+    .form h2{
+        left: 1.3rem;
+    }
+    .form img{
+        left: 41px;
+    }
+}
