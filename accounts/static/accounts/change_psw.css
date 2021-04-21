@@ -18,7 +18,7 @@ nav {
     right: 0;
     top: 0;
     bottom: 0;
-    /* position: fixed; */
+    /* position: relative; */
     padding-left: 25px;
     backdrop-filter: blur(5px);
     margin: 10px;
@@ -77,18 +77,55 @@ a {
 .logo {
     color: yellow;
 }
+#select-link{
+    /* border: 2px solid; */
+    height: 61px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: none;
+    top: 5rem;
+    width: 100%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+}
+#select-nav-links{
+    display: flex;
+    column-gap: 6rem;
+}
+#select-nav-links a{
+    list-style: none;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+}
 
 .login-wrapper {
     height: 100vh;
     width: 40vw;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     position: absolute;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    position: absolute; */
+    /* display: none; */
      top: 7rem; 
      left: 35rem; 
      /* border: 2px solid; */
 
+}
+.top{
+    position: relative;
+    top: 7rem;
+    width: 100%;
+    max-width: 380px;
+    padding: 80px 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 
 .form {
