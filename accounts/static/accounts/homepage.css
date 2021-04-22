@@ -2,6 +2,8 @@
 * {
     padding: 0;
     margin: 0;
+    right: 0;
+    margin-right: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -9,8 +11,8 @@
 body {
     display: flex;
     justify-content: center;
-    min-height: 100vh;
     background: #161623;
+    width: 100vw;
 }
 
 
@@ -20,7 +22,7 @@ nav {
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     background: rgba(255, 255, 255, 0.1);
     z-index: 1;
-    height: 7%;
+    height:7%;
     left: 0;
     right: 0;
     top: 0;
@@ -88,6 +90,47 @@ a {
 
 
 /* end */
+.topuser{
+    top: 9.5rem;
+}
+.shift{
+    position: relative;
+    top: 4.5rem;
+}
+.topcontainer{
+    top: 4.5rem;
+
+}
+#select-link{
+    /* border: 2px solid; */
+    height: 61px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: none;
+    top: 5rem;
+    width: 100%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+}
+#select-nav-links{
+    /* position: relative;
+    display: flex;
+    text-decoration: none;
+    column-gap: 1rem;
+    left: -5rem; */
+    display: flex;
+    text-decoration: none;
+    column-gap: 6rem;
+}
+#select-nav-links a{
+    list-style: none;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+}
 
 
 /* Username */
@@ -97,7 +140,7 @@ a {
     background: white;
     overflow: hidden;
     z-index: 2;
-    height: 7%;
+    height:7%;
     left: 0;
     right: 0;
     top: 85px;
@@ -127,14 +170,14 @@ a {
 
 /* radio */
 #sem-btn2 {
-    position: absolute;
-    float: right;
+    position: relative;
+    /* float: right; */
     top: 68px;
-    left: 470px;
+    left: 371px;
     /* display: flex; */
     display: none;
     height: 5rem;
-    margin: 10px 30px;
+    /* margin: 10px 30px; */
     z-index: 2;
     /* border: 2px solid white; */
 }
@@ -198,7 +241,7 @@ input[type="radio"] {
 
 label {
     position: relative;
-    padding: 10px;
+    padding: 8px;
     margin: 0px 13px;
     width: 90px;
     color: #000;
@@ -245,6 +288,7 @@ input[type="radio"]:checked+label::before {
     margin-top: 12%;
     position: relative;
     display: flex;
+    /* display: none; */
     justify-content: center;
     align-items: center;
     max-width: 1200px;
