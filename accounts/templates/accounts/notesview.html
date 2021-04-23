@@ -9,51 +9,47 @@
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
-
-    <link rel="shortcut icon" href="{% static 'accounts/favicon.ico' %}" />
+    <link rel="shortcut icon" href="{% static 'accounts/favicon.ico' %}"/>
     <link rel="stylesheet" href="{% static 'accounts/notes.css' %}">
     <link rel="stylesheet" href="{% static 'accounts/media-query.css' %}">
 </head>
 
 <body>
 
-    <!--Navbar-->
-    <div>
-        <nav>
-            <div class="navbar">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <i class="fab fa-phoenix-framework fa-3x"><strong class="logo">N</strong>ote<strong
-                    class="logo">B</strong>ook</i>
-            <ul class="nav-links">
-                <li><a href="{% url 'home' %}" aria-current="page"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="{% url 'about' %}"><i class="fas fa-edit"></i> About</a></li>
+<!--Navbar-->
+<div>
+    <nav>
+        <div class="navbar">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <i class="fab fa-phoenix-framework fa-3x"><strong class="logo">N</strong>ote<strong
+                class="logo">B</strong>ook</i>
+        <ul class="nav-links">
+            <li><a href="{% url 'home' %}" aria-current="page"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="{% url 'about' %}"><i class="fas fa-edit"></i> About</a></li>
+            <li><a href="/password_change/"><i class="fas fa-user-edit"></i> Change Password</a></li>
+            <li><a href="/admin/"><i class="fas fa-user-shield"></i> Admin</a></li>
+            <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </nav>
+</div>
+<!--end-->
 
-                <li><a href="/password_change/"><i class="fas fa-user-edit"></i> Change Password</a></li>
+<!--user-->
+<div class="greet">
+    <strong class="user">
+        WELCOME,</strong><strong class="user1"> {{ request.user }} <i
+        class="fas fa-user-graduate fa-1x"></i></strong>
+    </strong>
+</div>
+<!--end-->
 
-                <li><a href="/admin/"><i class="fas fa-user-shield"></i> Admin</a></li>
-
-                <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-            </ul>
-        </nav>
-    </div>
-    <!--end-->
-
-    <!--user-->
-    <div class="greet">
-        <strong class="user">
-            WELCOME,</strong><strong class="user1"> {{ request.user }} <i
-                class="fas fa-user-graduate fa-1x"></i></strong>
-        </strong>
-    </div>
-    <!--end-->
-
-    <div id="left">
-        <img style="height: 300px;
+<div id="left">
+    <img style="height: 300px;
         width: 300px;
         position: absolute;
         left: 155px;
@@ -63,173 +59,181 @@
         background-origin: border-box;
         background-clip: content-box, border-box;
      " src="/media/{{ info.img }}" alt="Picture">
-    </div>
+</div>
 
-    <div id="main-heading">
-        <h2 class="heading"><a href="\"><i class="far fa-arrow-alt-circle-left fa-2x"></i></a>{{ info.subject_name }}
-            / {{ info.subject_code }}</h2><br>
-    </div>
+<div id="main-heading">
+    <h2 class="heading"><a href="\"><i class="far fa-arrow-alt-circle-left fa-2x"></i></a>{{ info.subject_name }}
+        / {{ info.subject_code }}</h2><br>
+</div>
 
-    <div id="right">
-        {% if Note1 %}
-            <h2 class="topic"><i class="fas fa-university"></i> Unit-1</h2>
-            <table>
+<div id="right">
+    {% if Note1 %}
+        <div><h2 id="first-topic" class="topic"><i class="fas fa-university"></i> Unit-1</h2></div>
+        <table>
+            <tr>
+                <th>Content</th>
+                <th class="by">Uploaded By</th>
+                <th>Uploaded on</th>
+                <th>Size</th>
+                <th>View</th>
+                <th>Download</th>
+            </tr>
+            {% for x in Note1 %}
                 <tr>
-                    <th>Content</th>
-                    <th>Uploaded By</th>
-                    <th>Uploaded on</th>
-                    <th>Size</th>
-                    <th>View</th>
-                    <th>Download</th>
+                    <td> {{ x.name }}</td>
+                    <td class="by">{{ x.uploaded_by }}</td>
+                    <td>{{ x.date }}</td>
+                    <td>{{ x.file_upload.size|filesizeformat }}</td>
+                    <td>
+                        <button class="btn"><a style="color:black;" href="{{ x.file_upload.url }}">View</a></button>
+                    </td>
+                    <td>
+                        <button class="btn"><a style="color:black;" href="{{ x.file_upload.url }}"
+                                               download>Download</a></button>
+                    </td>
                 </tr>
-                {% for x in Note1 %}
-                    <tr>
-                        <td> {{ x.name }}</td>
-                        <td>{{ x.uploaded_by }}</td>
-                        <td>{{ x.date }}</td>
-                        <td>{{ x.file_upload.size|filesizeformat }}</td>
-                        <td>
-                            <button class="btn"><a style="color:black;"
-                                                   href="{{ x.file_upload.url }}">View</a></button>
-                        </td>
-                        <td>
-                            <button class="btn"><a style="color:black;"
-                                                   href="{{ x.file_upload.url }}" download>Download</a></button>
-                        </td>
-                    </tr>
-                {% endfor %}
-            </table>
-        {% endif %}
-        {% if Note2 %}
-            <h2 class="topic"><i class="fas fa-university"></i> Unit-2</h2>
-            <table>
-                <tr>
-                    <th>Content</th>
-                    <th>Uploaded By</th>
-                    <th>Uploaded on</th>
-                    <th>Size</th>
-                    <th>View</th>
-                    <th>Download</th>
-                </tr>
-                {% for y in Note2 %}
-                    <tr>
-                        <td> {{ y.name }}</td>
-                        <td>{{ y.uploaded_by }}</td>
-                        <td>{{ y.date }}</td>
-                        <td>{{ y.file_upload.size|filesizeformat }}</td>
-                        <td>
-                            <button class="btn"><a style="color:black;"
-                                                   href="{{ y.file_upload.url }}">View</a></button>
-                        </td>
-                        <td>
-                            <button class="btn"><a style="color:black;"
-                                                   href="{{ y.file_upload.url }}" download>Download</a></button>
-                        </td>
-                    </tr>
-                {% endfor %}
-            </table>
-        {% endif %}
-        {% if Note3 %}
-            <h2 class="topic"><i class="fas fa-university"></i> Unit-3</h2>
-            <table>
-                <tr>
-                    <th>Content</th>
-                    <th>Uploaded By</th>
-                    <th>Uploaded on</th>
-                    <th>Size</th>
-                    <th>View</th>
-                    <th>Download</th>
-                </tr>
-                {% for z in Note3 %}
-                    <tr>
-                        <td> {{ z.name }}</td>
-                        <td>{{ z.uploaded_by }}</td>
-                        <td>{{ z.date }}</td>
-                        <td>{{ z.file_upload.size|filesizeformat }}</td>
-                        <td>
-                            <button class="btn"><a style="color:black;"
-                                                   href="{{ z.file_upload.url }}">View</a></button>
-                        </td>
-                        <td>
-                            <button class="btn"><a style="color:black;"
-                                                   href="{{ z.file_upload.url }}" download>Download</a></button>
-                        </td>
-                    </tr>
-                {% endfor %}
-            </table>
-        {% endif %}
-        {% if Note4 %}
-            <h2 class="topic"><i class="fas fa-university"></i> Unit-4</h2>
-            <table>
-                <tr>
-                    <th>Content</th>
-                    <th>Uploaded By</th>
-                    <th>Uploaded on</th>
-                    <th>Size</th>
-                    <th>View</th>
-                    <th>Download</th>
-                </tr>
-                {% for w in Note4 %}
-                    <tr>
-                        <td> {{ w.name }}</td>
-                        <td>{{ w.uploaded_by }}</td>
-                        <td>{{ w.date }}</td>
-                        <td>{{ w.file_upload.size|filesizeformat }}</td>
-                        <td>
-                            <button class="btn"><a style="color:black;"
-                                                   href="{{ w.file_upload.url }}">View</a></button>
-                        </td>
-                        <td>
-                            <button class="btn"><a style="color:black;"
-                                                   href="{{ w.file_upload.url }}" download>Download</a></button>
-                        </td>
-                    </tr>
-                {% endfor %}
-            </table>
-        {% endif %}
-        {% if Assignment %}
-            <h2 class="topic"><i class="fas fa-university"></i> Assignments</h2>
-            <table>
-                <tr>
-                    <th>Content</th>
-                    <th>Uploaded By</th>
-                    <th>Uploaded on</th>
-                    <th>Size</th>
-                    <th>View</th>
-                    <th>Download</th>
-                </tr>
-                {% for a in Assignment %}
-                    <tr>
-                        <td> {{ a.name }}</td>
-                        <td>{{ a.uploaded_by }}</td>
-                        <td>{{ a.date }}</td>
-                        <td>{{ a.file_upload.size|filesizeformat }}</td>
-                        <td>
-                            <button class="btn"><a style="color:black;"
-                                                   href="{{ a.file_upload.url }}">View</a></button>
-                        </td>
-                        <td>
-                            <button class="btn"><a style="color:black;"
-                                                   href="{{ a.file_upload.url }}" download>Download</a></button>
-                        </td>
-                    </tr>
-                {% endfor %}
-            </table>
-        {% endif %}
+            {% endfor %}
 
-    </div>
-        <script>
-            const navbar = document.querySelector(".navbar");
-            const navLinks = document.querySelector(".nav-links");
-            const links = document.querySelectorAll(".nav-links li");
+        </table>
+    {% endif %}
 
-            navbar.addEventListener("click", () => {
-                navLinks.classList.toggle("open");
-                links.forEach(link => {
-                    link.classList.toggle("fade");
-                });
-            });
-        </script>
+    {% if Note2 %}
+        <div><h2 class="topic"><i class="fas fa-university"></i> Unit-2</h2></div>
+        <table>
+            <tr>
+                <th>Content</th>
+                <th class="by">Uploaded By</th>
+                <th>Uploaded on</th>
+                <th>Size</th>
+                <th>View</th>
+                <th>Download</th>
+            </tr>
+            {% for y in Note2 %}
+                <tr>
+                    <td> {{ y.name }}</td>
+                    <td class="by">{{ y.uploaded_by }}</td>
+                    <td>{{ y.date }}</td>
+                    <td>{{ y.file_upload.size|filesizeformat }}</td>
+                    <td>
+                        <button class="btn"><a style="color:black;" href="{{ y.file_upload.url }}">View</a></button>
+                    </td>
+                    <td>
+                        <button class="btn"><a style="color:black;" href="{{ y.file_upload.url }}"
+                                               download>Download</a></button>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+    {% if Note3 %}
+        <div><h2 class="topic"><i class="fas fa-university"></i> Unit-3</h2></div>
+        <table>
+            <tr>
+                <th>Content</th>
+                <th class="by">Uploaded By</th>
+                <th>Uploaded on</th>
+                <th>Size</th>
+                <th>View</th>
+                <th>Download</th>
+            </tr>
+            {% for z in Note3 %}
+                <tr>
+                    <td> {{ z.name }}</td>
+                    <td class="by">{{ z.uploaded_by }}</td>
+                    <td>{{ z.date }}</td>
+                    <td>{{ z.file_upload.size|filesizeformat }}</td>
+                    <td>
+                        <button class="btn"><a style="color:black;"
+                                               href="{{ z.file_upload.url }}">View</a></button>
+                    </td>
+                    <td>
+                        <button class="btn"><a style="color:black;"
+                                               href="{{ z.file_upload.url }}" download>Download</a></button>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+    {% if Note4 %}
+        <div><h2 class="topic"><i class="fas fa-university"></i> Unit-4</h2></div>
+        <table>
+            <tr>
+                <th>Content</th>
+                <th class="by">Uploaded By</th>
+                <th>Uploaded on</th>
+                <th>Size</th>
+                <th>View</th>
+                <th>Download</th>
+            </tr>
+            {% for w in Note4 %}
+                <tr>
+                    <td> {{ w.name }}</td>
+                    <td class="by">{{ w.uploaded_by }}</td>
+                    <td>{{ w.date }}</td>
+                    <td>{{ w.file_upload.size|filesizeformat }}</td>
+                    <td>
+                        <button class="btn"><a style="color:black;"
+                                               href="{{ w.file_upload.url }}">View</a></button>
+                    </td>
+                    <td>
+                        <button class="btn"><a style="color:black;"
+                                               href="{{ w.file_upload.url }}" download>Download</a></button>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+    {% if Assignment %}
+        <div><h2 class="topic"><i class="fas fa-university"></i> Assignments</h2></div>
+        <table>
+            <tr>
+                <th>Content</th>
+                <th class="by">Uploaded By</th>
+                <th>Uploaded on</th>
+                <th>Size</th>
+                <th>View</th>
+                <th>Download</th>
+            </tr>
+            {% for a in Assignment %}
+                <tr>
+                    <td> {{ a.name }}</td>
+                    <td class="by">{{ a.uploaded_by }}</td>
+                    <td>{{ a.date }}</td>
+                    <td>{{ a.file_upload.size|filesizeformat }}</td>
+                    <td>
+                        <button class="btn"><a style="color:black;"
+                                               href="{{ a.file_upload.url }}">View</a></button>
+                    </td>
+                    <td>
+                        <button class="btn"><a style="color:black;"
+                                               href="{{ a.file_upload.url }}" download>Download</a></button>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+
+</div>
+<script>
+    const navbar = document.querySelector(".navbar");
+    navbar.addEventListener("click", () => {
+        let elem = document.getElementById('greetuser');
+        let elem2 = document.getElementById('main-heading');
+        let elem3 = document.getElementById('right');
+
+        if (document.getElementById('select-link').style.display == "flex") {
+            document.getElementById('select-link').style.display = "none";
+            elem.classList.remove("topuser");
+            elem2.classList.remove("shift");
+            elem3.classList.remove("topcontainer");
+        } else {
+            document.getElementById('select-link').style.display = "flex";
+            elem.classList.add("topuser");
+            elem2.classList.add("shift");
+            elem3.classList.add("topcontainer");
+        }
+    });
+</script>
 
 </body>
 

@@ -88,6 +88,41 @@ a {
     color: yellow;
 }
 
+#select-link{
+    /* border: 2px solid; */
+    height: 61px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: none;
+    top: 5rem;
+    width: 100%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+}
+#select-nav-links{
+    /* position: relative;
+    display: flex;
+    text-decoration: none;
+    column-gap: 1rem;
+    left: -5rem; */
+    display: flex;
+    text-decoration: none;
+    column-gap: 6rem;
+}
+#select-nav-links a{
+    list-style: none;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+.topuser{
+    top: 10rem;
+}
+
+
 
 /* end */
 
@@ -146,7 +181,10 @@ a {
     right: 100px;
     height: 2rem;
 }
-
+.shift{
+    position: relative;
+    top: 11.5rem !important;
+}
 #right {
     height: 70vh;
     width: 65%;
@@ -159,6 +197,9 @@ a {
     overflow-y: scroll;
     float: right;
     right: -300px;
+}
+.topcontainer{
+    top: 14rem !important;
 }
 
 ::-webkit-scrollbar {
