@@ -457,7 +457,7 @@
     }
 }
 @media screen and (max-width:560px){
-    #sem-btn2 ul li >ul{
+    #sem-btn2 ul li >ul{ 
         display: none;
     }
     #sem-btn2 ul li:hover >ul{
