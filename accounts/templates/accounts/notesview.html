@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" href="{% static 'accounts/favicon.ico' %}"/>
     <link rel="stylesheet" href="{% static 'accounts/notes.css' %}">
     <link rel="stylesheet" href="{% static 'accounts/media-query.css' %}">
@@ -18,26 +19,42 @@
 
 <body>
 
-<!--Navbar-->
-<div>
-    <nav>
-        <div class="navbar">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <i class="fab fa-phoenix-framework fa-3x"><strong class="logo">N</strong>ote<strong
-                class="logo">B</strong>ook</i>
-        <ul class="nav-links">
+    <!--Navbar-->
+    <div>
+        <nav>
+            <div class="navbar">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <i class="fab fa-phoenix-framework fa-3x"><strong class="logo">N</strong>ote<strong
+                    class="logo">B</strong>ook</i>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}" aria-current="page"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{% url 'about' %}"><i class="fas fa-edit"></i> About</a></li>
+
+                <li><a href="/password_change/"><i class="fas fa-user-edit"></i> Change Password</a></li>
+
+                <li><a href="/admin/"><i class="fas fa-user-shield"></i> Admin</a></li>
+
+                <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="select-link">
+        <ul id="select-nav-links">
             <li><a href="{% url 'home' %}" aria-current="page"><i class="fas fa-home"></i> Home</a></li>
             <li><a href="{% url 'about' %}"><i class="fas fa-edit"></i> About</a></li>
+
             <li><a href="/password_change/"><i class="fas fa-user-edit"></i> Change Password</a></li>
+
             <li><a href="/admin/"><i class="fas fa-user-shield"></i> Admin</a></li>
+
             <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
         </ul>
-    </nav>
-</div>
-<!--end-->
+
+    </div>
+    <!--end-->
 
 <!--user-->
 <div class="greet">
