@@ -1,3 +1,4 @@
+
 @media screen and (max-width:1300px) {
     #left {
         left: -101px;
@@ -212,7 +213,7 @@
         width: 1031px;
         /* border: 2px solid; */
         left: -370px;
-        top: 163px;
+        top: 14rem;
         padding: 0px 741px 100px 2px;
     }
     table, td {
@@ -320,6 +321,7 @@
 }
 @media screen and (max-width:706px){
     #right {
+        top: 15rem;
         left: -335px;
     }
     #main-heading {
@@ -366,6 +368,19 @@
         border-radius: 10px;
     }
 }
+@media screen and (max-width:637px){
+    nav {
+        left: 360px;
+    }
+    .heading{
+        font-size: 1.24rem;
+    }
+    #right{
+        top: 13rem;
+    }
+
+}
+
 @media screen and (max-width:624px){
     #right {
         left: -320px;
@@ -382,15 +397,6 @@
         width: 29%;
         height: 10%;
         left: 26px;
-    }
-
-}
-@media screen and (max-width:637px){
-    nav {
-        left: 360px;
-    }
-    .heading{
-        font-size: 1.24rem;
     }
 
 }
@@ -506,6 +512,9 @@
     #select-nav-links {
         right: -20px;
     }
+    .topcontainer {
+        top: 18rem !important;
+    }
     
 }
 @media screen and (max-width:469px){
@@ -584,6 +593,15 @@
     #main-heading a{
         font-size: 0.8rem;
     }
+    #select-link {
+        left: 7px;
+    }
+    #select-nav-links {
+        right: -7px;
+    }
+    #right{
+        top: 13rem;
+    }
 }
 @media screen and (max-width:382px){
     table{
@@ -616,12 +634,17 @@
         top: 5px;
     }
 }
-@media screen and (max-width:369px){
+@media screen and (max-width:371px){
     table{
         left: 319px;
     }
     .heading{
-        left: 549px;
+        left: 578px;
+    }
+    .btn a {
+        font-size: 0.5rem;
+        right: 6px;
+        top: -2px;
     }
 }
 @media screen and (max-width:353px){
@@ -632,7 +655,7 @@
         right: 6px;
     }
 }
-@media screen and (max-width:342px){
+@media screen and (max-width:343px){
     table{
         left: 333px;
     }
