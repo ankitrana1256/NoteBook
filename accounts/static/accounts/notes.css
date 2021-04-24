@@ -111,12 +111,17 @@ a {
     display: flex;
     text-decoration: none;
     column-gap: 6rem;
+    list-style: none;
+
 }
 #select-nav-links a{
     list-style: none;
     font-size: 1rem;
     text-decoration: none;
     font-weight: 600;
+}
+#select-nav-links li a{
+    text-decoration: none;
 }
 .topuser{
     top: 10rem;
