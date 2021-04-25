@@ -386,7 +386,7 @@ input[type="radio"]:checked+label::before {
     max-height: 205px;
     overflow: hidden;
     overflow-y: scroll;
-    text-align: center;
+    text-align: justify;
     letter-spacing: 1px;
     word-break: break-all;
 }
