@@ -1,0 +1,78 @@
+#box {
+    height: 550px;
+    width: 550px;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding-top: 30px;
+    border-radius: 20px;
+    margin: 4% auto;
+    text-align: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 2px solid black;
+    background: rgba(169, 228, 233, 0.5);
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(22, 22, 22);
+}
+
+h3 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+p {
+    padding: 10px;
+    font-size: large;
+    text-align: center;
+}
+
+input[name="email"] {
+    /* margin: 5px 40px; */
+    position: absolute;
+    left: 48px;
+    width: 450px;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+input:focus {
+    box-shadow: -2px -1px 45px 4px rgb(200, 209, 218);
+}
+
+#btn {
+    position: relative;
+    top: 42px;
+    left: -13px;
+    margin: 30px 170px;
+    width: 170px;
+    height: 60px;
+    background-color: red;
+    font-size: 17px;
+    color: white;
+    border-radius: 10px;
+}
+
+b,
+strong {
+    position: relative;
+    font-weight: bolder;
+    top: 25px;
+    left: -12px;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background: green;
+}
