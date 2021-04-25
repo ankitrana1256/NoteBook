@@ -357,6 +357,7 @@ input[type="radio"]:checked+label::before {
 }
 
 .container .card .content h2 {
+    position: absolute;
     font-size: 2.5rem;
     color: rgba(255, 255, 255, 0.05);
     pointer-events: none;
@@ -364,6 +365,7 @@ input[type="radio"]:checked+label::before {
 }
 
 .container .card .content h3 {
+    position: absolute;
     margin-top: 19px;
     /* border: 2px solid white; */
     font-size: 1.8rem;
@@ -379,6 +381,7 @@ input[type="radio"]:checked+label::before {
 }
 
 .container .card .content p {
+    position: absolute;
     /* border: 2px solid white; */
     font-size: 1rem;
     color: #fff;
@@ -386,6 +389,7 @@ input[type="radio"]:checked+label::before {
     max-height: 205px;
     overflow: hidden;
     overflow-y: scroll;
+    text-align: center;
     letter-spacing: 1px;
     word-break: break-all;
 }
