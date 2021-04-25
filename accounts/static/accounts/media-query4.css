@@ -1,0 +1,89 @@
+@media screen and (max-width:941px){
+    #box {
+        width: 495px;
+    }
+    input[name="email"] {
+        left: 22px;
+    }
+    
+}
+@media screen and (max-width:835px){
+    #box {
+        width: 443px;
+    }
+    input[name="email"] {
+        width: 399px;
+    }
+    #btn{
+        left: -39px;
+    }
+    b, strong{
+        left: -5px;
+    }
+}
+@media screen and (max-width:687px){
+    #box {
+        width: 421px;
+    }
+    input[name="email"] {
+        width: 369px;
+        left: 22px;
+        top: 274px;
+    }
+    #btn {
+        left: -47px;
+        top: 27px;
+    }
+    b, strong {
+        left: 2px;
+    }
+}
+@media screen and (max-width:557px){
+    #box {
+        width: 382px;
+    }
+    input[name="email"] {
+        width: 326px;
+    }
+    #btn {
+        width: 152px;
+        height: 51px;
+        left: -64px;
+    }
+    b, strong {
+        left: -4px;
+    }
+}
+@media screen and (max-width:405px){
+    #box {
+        width: 326px;
+        height: 500px;
+        top: 36px;
+    }
+    input[name="email"] {
+        width: 274px;
+    }
+    #btn {
+        left: -87px;
+    }
+    b, strong {
+        left: 0px;
+    }
+}
+@media screen and (max-width:350px){
+    #box {
+        width: 297px;
+        height: 469px;
+       top: 52px;
+    }
+    input[name="email"] {
+        width: 252px;
+    }
+    #btn {
+        left: -101px;
+    }
+    b, strong {
+        left: 1px;
+        top: 17px;
+    }
+}

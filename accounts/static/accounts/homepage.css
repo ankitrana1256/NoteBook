@@ -287,8 +287,6 @@ input[type="radio"]:checked+label::before {
     box-shadow: none;
     top: 3px;
 }
-
-
 /* end */
 
 /* Card */
@@ -359,15 +357,16 @@ input[type="radio"]:checked+label::before {
 }
 
 .container .card .content h2 {
-    position: absolute;
-    top: 10px;
-    font-size: 3rem;
+    /*position: absolute;*/
+    /*top: 10px;*/
+    font-size: 2.5rem;
     color: rgba(255, 255, 255, 0.05);
     pointer-events: none;
+    text-align: center;
 }
 
 .container .card .content h3 {
-    margin-top: 60px;
+    margin-top: 19px;
     /* border: 2px solid white; */
     font-size: 1.8rem;
     color: #fff;
@@ -389,7 +388,7 @@ input[type="radio"]:checked+label::before {
     max-height: 205px;
     overflow: hidden;
     overflow-y: scroll;
-    text-align: justify;
+    text-align: right;
     letter-spacing: 1px;
     word-break: break-all;
 }
