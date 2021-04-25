@@ -48,6 +48,9 @@
         background-position: -32px 0;
         right: 4px;
     }
+    .container .card .content p {
+        left: -224px;
+    }
 }
 @media screen and (max-width:940px){
     .line{
@@ -71,10 +74,20 @@
     .lSAction>.lSNext {
         right: 31px;
     }
+    .container .card .content h2{
+        left: -204px;
+    }
+    .container .card .content h3{
+        left: -208px;
+    }
+    .container .card .content p{
+        width: 237px;
+    left: -197px;
+    }
 }
 @media screen and (max-width:915px){
    .container{
-       top: 8rem;
+       top: 5rem;
        width: 830px;
    }
    .container .card{
@@ -86,10 +99,11 @@
     padding: 43px 20px;
     padding-top: 10px;
     left: 224px;
+    top: 71px;
    }
    #sem-btn{
        left: 128px;
-       top: 10rem;
+       top: 8rem;
    }
    label{
        margin: 2px;
@@ -266,6 +280,21 @@
         width: 496px;
     } 
     .container .card .content h2 {
+        left: -180px;
+        font-size: 2rem;
+    }
+    .container .card .content h3 {
+        left: -186px;
+        font-size: 1.5rem;
+        top: 50px;
+    }
+    .container .card .content p {
+        width: 220px;
+        left: -180px;
+        height: 212px;
+        top: 133px;
+    }
+    /* .container .card .content h2 {
         position: absolute;
         top: 10px;
         right: 28px;
@@ -274,18 +303,18 @@
     .container .card .content h3{
         font-size: 1.4rem;
         margin-top: 42px;
-    }
+    } */
     .lSAction>.lSNext {
         right: -8px;
     }
     .lSAction>.lSPrev{
         left: -3px;
     }
-    .container .card .content p {
+    /* .container .card .content p {
         position: relative;
         font-size: 0.9rem;
         top: -20px;
-    }
+    } */
     #select-nav-links {
         column-gap: 1.5rem;
     }
@@ -329,6 +358,15 @@
     .lSAction>.lSPrev {
         left: -10px;
     }
+    .container .card .content h3 {
+        top: 46px;
+    }
+    .container .card .content p {
+        width: 209px;
+        left: -168px;
+        height: 212px;
+        top: 121px;
+    }
 }
 @media screen and (max-width:451px){
     .container .card {
@@ -336,22 +374,7 @@
         margin: 20px 6px;
         height: 318px;
     }
-    .container .card .content h2 {
-        position: absolute;
-        top: 10px;
-        right: 29px;
-        font-size: 1.5rem;
-    }
-    .container .card .content h3 {
-        position: relative;
-        top: -15px;
-    }
-    .container .card .content p {
-        position: relative;
-        font-size: 0.69rem;
-        top: -32px;
-        padding-left: 10px;
-    }
+    
     .container {
         width: 416px;
     }
@@ -367,7 +390,24 @@
     .line {
         left: 360px;
     }
-
+    .container .card .content h2 {
+        top: 14px;
+        left: -154px;
+        font-size: 1.79rem;
+    }
+    .container .card .content h3 {
+        top: 37px;
+        left: -152px;
+    }
+    .container .card .content p{
+        font-size: 0.8rem;
+    }
+    .container .card .content p {
+        width: 194px;
+        left: -149px;
+        height: 182px;
+        top: 114px;
+    }
 }
 @media screen and (max-width:424px){
     .line {
@@ -391,29 +431,25 @@
         font-size: 2em;
         top: -23px;
     }
-    .container .card .content p {
-        position: relative;
-        font-size: 0.69rem;
-        top: -32px;
-        padding-left: 2px;
-        padding-right: 0px;
-    }
     .container .card{
         width: 179px;
         height: 305px;
     }
-    .container .card .content h3 {
-        position: relative;
-        top: -15px;
-        left: 9px;
+    .container .card .content h2 {
+        top: 14px;
+        left: -139px;
+        font-size: 1.7rem;
     }
     .container .card .content p {
-        position: relative;
-        font-size: 0.69rem;
-        top: -32px;
-        padding-left: 13px;
-        letter-spacing: 0;
-        text-align: none;
+        width: 183px;
+        left: -139px;
+        height: 182px;
+        top: 114px;
+    }
+    .container .card .content h3 {
+        top: 37px;
+        left: -142px;
+        font-size: 1.3rem;
     }
     .container {
         top: 8rem;
@@ -438,21 +474,20 @@
         height: 353px;
     }
     .container .card .content h2 {
-        position: absolute;
-        top: 10px;
-        right: 38px;
-        font-size: 1.7rem;
+        top: 14px;
+        left: -172px;
+        font-size: 2rem;
     }
     .container .card .content h3 {
-        position: relative;
-        top: -14px;
-        left: -1px;
+        top: 39px;
+        left: -171px;
+        font-size: 1.7rem;
     }
     .container .card .content p {
-        position: relative;
-        font-size: 0.9rem;
-        top: -20px;
-        padding-left: 3px;
+        width: 219px;
+        left: -178px;
+        height: 213px;
+        top: 126px;
     }
     #sem-btn2 {
         left: 74px;
