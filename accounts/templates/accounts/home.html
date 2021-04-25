@@ -106,8 +106,7 @@
     <div id="sem-btn">
         <fieldset id="choosebtn">
             <legend><b>Filters</b></legend>
-            <form action="" method="Post" id="theForm">
-                {% csrf_token %}
+            <form action="" method="Post" id="theForm">{% csrf_token %}
                 <span>
                     <input type="radio" name="sem" id="sem-1" class="first-row" value="1"
                            onChange="autoSubmit();"><label for="sem-1">Sem-1</label>
