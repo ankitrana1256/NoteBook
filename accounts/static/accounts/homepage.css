@@ -7,8 +7,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+html{
+    width: 100vw;
+    height: 100vh;
+}
 body {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     background: #161623;
@@ -91,14 +95,14 @@ a {
 
 /* end */
 .topuser{
-    top: 9.5rem;
+    top: 9.5rem !important;
 }
 .shift{
     position: relative;
-    top: 4.5rem;
+    top: 5rem;
 }
 .topcontainer{
-    top: 4.5rem;
+    top: 7rem !important;
 
 }
 #select-link{
@@ -114,6 +118,9 @@ a {
     width: 100%;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     background: rgba(255, 255, 255, 0.1);
+}
+#select-link ul{
+    list-style: none;
 }
 #select-nav-links{
     /* position: relative;
@@ -208,6 +215,9 @@ a {
     left: 135px;
     /* padding: 20px; */
 }
+#sem-btn2 ul{
+    list-style: none;
+}
 #sem-btn2 ul li:hover{
     background-color: #3697aa;
 
@@ -217,7 +227,6 @@ a {
 }
 #sem-btn2 ul li:hover >ul{
     display: block;
-
 }
 fieldset {
     height: 100%;

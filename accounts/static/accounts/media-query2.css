@@ -1,704 +1,502 @@
-@media screen and (max-width:2000px){
-    #sem-btn{
-        left: 644px;
-    }
-    
-}
-@media screen and (max-width:1680px){
-    #sem-btn{
-        left: 500px;
-    }
-    
-}
-@media screen and (max-width:1524px){
-    #sem-btn {
-        left: 320px;
-    }
-    .greet{
-        margin-right: 79%;
-        padding-bottom: 51px;
-    }
-}
-@media screen and (max-width:1376px){
-    label{
-        margin: 0px 3px;
-    }
-    
-}
-@media screen and (max-width:1237px){
-    #sem-btn {
-        left: 236px;
-    }
-    
-}
-@media screen and (max-width:1141px){
-    #sem-btn {
-        left: 261px;
-    }
-    
-}
-@media screen and (max-width:1120px){
-    #sem-btn {
-        left: 218px;
-    }
-    
-}
-@media screen and (max-width:1109px){
-    label{
-        padding: 10px 3px 10px 0px;
-    }
-}
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1000px){
     .line {
         width: 30px;
         height: 3px;
         background: rgb(20, 20, 20);
         margin: 5px;
         position: relative;
-        /* left: 940px; */
-        left: 794px;
-        top: -6px;
-    }
-    nav {
-        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-        background: rgba(255, 255, 255, 0.1);
-        height: 3.3rem;
-        left: 0;
-        right: 0;
-        width: 51rem;
-        top: -2px;
-        bottom: 0;
-        position: fixed;
-        padding-left: 25px;
-        backdrop-filter: blur(5px);
-        margin: 10px;
-        text-align: right;
-        z-index: 3;
-    }
-    .navbar {
-        position: relative;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-        z-index: 2;
-    }
-    .greet {
-        box-shadow: 20px 20px 50px rgb(0 0 0 / 50%);
-        background: white;
-        z-index: 2;
-        height: 4rem;
-        /* left: -33px; */
-        left: -46px;
-        right: 0;
-        top: 85px;
-        bottom: 0;
-        width: 20%;
-        position: relative;
-        backdrop-filter: blur(5px);
-        margin: 10px;
-        margin-right: 0;
-        padding-bottom: 0;
-        /* margin-right: 70%; */
-        text-align: center;
-        padding-top: 10px;
-        border-radius: 10px;
-    }
-    .fa-phoenix-framework {
-        float: left;
-        position: relative;
-        top: -30px;
+        left: 863px;
+        top: 7px;
     }
     .nav-links{
         display: none;
     }
-
-.container {
-    margin-top: 14%;
-    /* left: -96px; */
-    left: -186px;
-    top: 1rem;
-    width: 698px;
-}
-#sem-btn {
-    left: 204px;
-    margin-right: 0;
-}
-.topuser{
-    top: 10.5rem;
-}
-.shift{
-    top: 5.5rem;
-}
-.topcontainer{
-    top: 5.5rem;
-
-}
-    
-    
-}
-@media screen and (max-width:938px){
-    .line{
-        left: 915px;
+    nav{
+        position: absolute;
     }
-    .container{
-        top: 8rem;
-        left: -222px;
-    }
-    .greet {
-        top: 7rem;
-        margin-right: 0;
-        width: 45rem;
-        margin: 2px auto;
-        display: block;
-        left: 20rem;
-        padding: 18px 220px;
-    }
-    .user {
-        color: black;
+    .fa-3x {
         position: relative;
-        font-size: x-large;
-        top: 1px;
-        left: -171px;
-        /* position: absolute; */
-    }
-    .user1 {
-        top: -53px;
-        position: relative;
-        color: orangered;
-        font-size: x-large;
-    }
-    #sem-btn{
-        top: 12.5rem;
-        left: 90px;
-    }
-    .topuser{
-        top: 10rem;
-    }
-    .shift{
-        top: 1.5rem;
-    }
-}
-@media screen and (max-width:919px){
-    .line{
-        left: 878px;
-    }
-    #select-nav-links{
-        column-gap: 4rem;
-    }
-    .container{
-        top: 9rem;
-    }
-    .topcontainer{
-        top: 10rem;
-    }
-}
-@media screen and (max-width:878px){
-    .line{
-        left: 835px;
-    }
-    #sem-btn{
-        left: 40px;
-    }
-    
-}
-@media screen and (max-width:842px){
-    .line{
-        left: 789px;
-    }
-}
-@media screen and (max-width:830px){
-    #sem-btn {
-        left: 17px;
-    }
-}
-
-@media screen and (max-width:808px){
-    .line{
-        left: 746px;
-    }
-    #select-nav-links{
-        column-gap: 2.5rem;
-    }
-    #sem-btn {
-        left: 10px;
-    }
-    .container{
-        left: -200px;
+        font-size: 3em;
+        top: -31px;
     }
     .greet{
-        padding: 18px 188px;
+        width: 22%;
+        padding: 82px 20px;
+        padding-top: 10px;
+        left: 14px;
+        margin-right: 0;
     }
-    .topcontainer{
-        top: 13rem;
-    }
-    .shift{
-        top: 2.5rem;
-    }
-    
-}
-
-@media screen and (max-width:782px){
-    #sem-btn {
-        left: -9px;
-    }
-    .container{
-        top: 10rem;
-    }
-    .topcontainer{
-        top: 13rem;
-    }
-}
-@media screen and (max-width:762px){
-    .line{
-        left: 700px;
-    }
-    #sem-btn {
-        left: -21px;
-    }
-}
-@media screen and (max-width:751px){
-    #sem-btn {
-        display: block;
-        width: 50%;
-        height: 7rem;
-        left: 161px;
-        top: 11.5rem;
-        margin: 10px 0px 10px 25px;
+    #sem-btn{
+        left: 235px;
+        margin: 10px 20px;
     }
     label{
-        margin: 1px 4px;
+        padding: 8px 2px;
+        margin: 0px;
     }
-    span .first-row ~label{
+    .container {
+        top: 4rem;
+        width: 985px;
+    }
+    .container .card {
         position: relative;
-        top:-0.8rem;
+        width: 269px;
+        height: 400px;
+        margin: 27px;
     }
-    span .second-row ~label{
-        position: relative;
-        top:0.7rem;
+    .lSAction>.lSNext {
+        background-position: -32px 0;
+        right: 4px;
     }
-    .container{
-        top: 12rem;
-        left: -176px;
-    }
-    .greet{
-        left: 22rem;
-    }
-    .topcontainer{
-        top: 15rem;
-    }
-   
 }
-@media screen and (max-width:731px){
+@media screen and (max-width:940px){
+    .line{
+        left: 811px;
+    }
+    nav{
+        width: 100%;
+    }
+    #sem-btn {
+        left: 235px;
+        margin: 10px 10px;
+        margin-right: 0;
+    }
+    .container .card {
+        width: 240px;
+        margin: 31px;
+    }
+    .container {
+        width: 946px;
+    }
+    .lSAction>.lSNext {
+        right: 31px;
+    }
+}
+@media screen and (max-width:915px){
+   .container{
+       top: 8rem;
+       width: 830px;
+   }
+   .container .card{
+    margin: 31px 27px;
+    margin-right: 0px;
+   }
+   .greet {
+    width: 50%;
+    padding: 43px 20px;
+    padding-top: 10px;
+    left: 224px;
+   }
+   #sem-btn{
+       left: 128px;
+       top: 10rem;
+   }
+   label{
+       margin: 2px;
+   }
+   #select-nav-links{
+       column-gap: 5rem;
+   }
+   .topcontainer{
+       top: 12rem !important;
+   }
+   .lSAction>.lSNext {
+    right: -7px;
+}
+}
+@media screen and (max-width:875px){
+    .line{
+        left: 772px;
+    }
+    #sem-btn{
+        left: 92px;
+    }
+}
+@media screen and (max-width:825px){
+    .line {
+        left: 704px;
+    }
+    #sem-btn {
+        left: 81px;
+    }
+    #select-nav-links {
+        column-gap: 4rem;
+    }
+}
+@media screen and (max-width:800px){
+    #sem-btn {
+        left: 51px;
+    }
+    .greet {
+        left: 96px;
+    }
+    .container {
+        top: 3rem;
+        width: 556px;
+        right: 140px;
+    }
     #sem-btn{
         display: none;
     }
     #sem-btn2{
         display: flex;
-        top: 6.5rem;
-    }
-    #sem-btn2 ul #filters{
-        left: -14px;
-
-    }
-    .greet{
-       left: 18rem;
-       margin: 0;
-    }
-    .line{
-        left: 660px;
-    }
-    #select-nav-links{
-        column-gap: 2rem;
-    }
-    #secondbtn #sem-btn2  ul .shift2 {
-        top: 5rem ;
-        /* !important; */
-    }
-    .container{
-        top: 3rem;
-        left: -234px;
-    }
-    .topuser{
-        top: 11rem;
-    }
-    .topcontainer{
-        top: 10rem;
-    }
-}
-@media screen and (max-width:693px){
-    .line{
-        left: 622px;
-    }
-    #select-nav-links{
-        column-gap: 1.5rem;
-    }
-    .greet{
-        padding: 10px 127px;
-        left: 15rem;
-    }
-    .user{
-        left: -65px;
-    }
-    .user1 {
-        top: -31px;
-        left: -73px;
-    }
-    #sem-btn2 ul #filters {
-        left: 10px;
-    }
-    .container{
-        width: 505px;
-        left: -269px;
-        /* top: 0rem; */
-        top: 5rem;
-    }
-    .topcontainer{
-        top: 9rem;
-    }
-    .lSAction>.lSNext {
-        background-position: -32px 0;
-        right: -16px;
-    }
-    .container .card{
-        width: 200px;
-        height: 349px;
-    }
-    .container .card .content h2{
-        font-size: 2rem;
-    }
-    .container .card .content h3{
-        font-size: 1.5rem;
-        margin-top: 36px;
-    }
-    .container .card .content p{
-        font-size: 0.7rem;
     }
     #sem-btn2 ul li >ul{
         display: block;
     }
-    
+    #sem-btn2{
+        left: 429px;
+        top: 5rem;
+    }
+    #secondbtn #sem-btn2  ul .shift2 {
+        top: 5rem;
+    }
+    .topcontainer {
+        top: 7rem !important;
+    }
+    #select-nav-links {
+        column-gap: 3rem;
+    }
 }
-@media screen and (max-width:657px){
-    .line{
-        left: 579px;
-    }
-    #select-nav-links{
-        column-gap: 1rem;
+@media screen and (max-width:760px){
+    .line {
+        left: 648px;
     }
 }
-@media screen and (max-width:632px){
-    .container{
-        left: -257px;
-        margin: 30px 20px;
-        top: 8rem;
-    }
-    .topcontainer{
-        top: 12rem;
-    }
-    #sem-btn2 ul #filters {
-        left: 17px;
-    }
-    
-}
-@media screen and (max-width:621px){
-    .line{
-        left: 537px;
-    }
-    #select-nav-links a {
+@media screen and (max-width:735px){
+    #select-nav-links a{
         font-size: 0.8rem;
     }
-    
 }
-@media screen and (max-width:608px){
-    .container .card {
-        width: 180px;
-        height: 335px;
+@media screen and (max-width:715px){
+    .line {
+        left: 614px;
     }
-    .container .card .content h2 {
-        font-size: 1.5rem;
+}
+@media screen and (max-width:698px){
+    .line {
+        left: 585px;
     }
-    .container .card .content h3 {
-        font-size: 1.3rem;
-        margin-top: 25px;
+    .user1 {
+        font-size: large;
     }
-    .container .card .content p {
-        font-size: 0.6rem;
+    .user {
+        font-size: large;
     }
-    .lSAction>.lSNext {
-        background-position: -32px 0;
-        right: 19px;
+    .greet {
+        width: 43%;
+        padding: 40px 20px;
+        padding-top: 10px;
+        left: 71px;
     }
     .container{
-        left: -238px;
-    }
-
-}
-@media screen and (max-width:579px){
-    .line{
-        left: 520px;
-    }
-    .greet{
-        left: 15rem;
-    }
-    .container{
-        margin: 30px 10px;
-        left: -229px;
-    }
-    .container .card{
-        margin: 30px 25px;
-    }
-    .lSAction>.lSNext {
-        background-position: -32px 0;
-        right: 34px;
-    }
-    #sem-btn2 ul #filters {
-        left: -11px;
+        right: 119px;
     }
 }
-@media screen and (max-width:560px){
-    #sem-btn2 ul li >ul{ 
+@media screen and (max-width:675px){
+    #sem-btn2 {
+        left: 415px;
+        top: 5rem;
+    }
+}
+@media screen and (max-width:655px){
+    #sem-btn2 ul li >ul{
         display: none;
     }
+
     #sem-btn2 ul li:hover >ul{
         display: block;
     }
-    #sem-btn2 ul #filters {
-        left: -75px;
-    }
     .container {
-        margin: 30px;
-        left: -172px;
+        right: 46px;
     }
-    
-}
-@media screen and (max-width:539px){
+    .greet{
+        left: 54px;
+    }
+    #sem-btn2{
+        left: 313px;
+    }
     .line{
-        left: 450px;
-    }
-    #select-nav-links a {
-        font-size: 0.6rem;
-    }
-    #select-nav-links{
-        column-gap: 0.9rem;
-    }
-    .container {
-        left: -165px;
+        left: 557px;
     }
 }
-@media screen and (max-width:494px){
-    .line{
-        left: 430px;
+@media screen and (max-width:625px){
+    .line {
+        left: 522px;
     }
-    #select-nav-links{
-        column-gap: 0;
+    .container {
+        right: 50px;
     }
-    #select-nav-links a {
-        font-size: 12px;
-        /* padding: 12px -3px; */
+    #select-nav-links {
+        column-gap: 2rem;
+    }
+}
+@media screen and (max-width:590px){
+    .line {
+        left: 495px;
+    }
+    .container {
+        right: 50px;
+        top: 4rem;
+    }
+   
+}
+@media screen and (max-width:553px){
+    .line {
+        left: 463px;
+    }   
+}
+@media screen and (max-width:522px){
+    .line {
+        left: 432px;
+    }   
+}
+@media screen and (max-width:512px){
+    .line {
+        left: 432px;
+    } 
+    .container .card {
+        width: 220px;
+        margin: 20px 12px;
+        height: 358px;
+    } 
+    .container{
+        /* border: 2px solid wheat; */
+        top: 6rem;
+        width: 496px;
+    } 
+    .container .card .content h2 {
+        position: absolute;
+        top: 10px;
+        right: 28px;
+        font-size: 2rem;
+    }
+    .container .card .content h3{
+        font-size: 1.4rem;
+        margin-top: 42px;
+    }
+    .lSAction>.lSNext {
+        right: -8px;
+    }
+    .lSAction>.lSPrev{
+        left: -3px;
+    }
+    .container .card .content p {
         position: relative;
-        left: 20px;
+        font-size: 0.9rem;
+        top: -20px;
     }
-    .container {
-        left: -154px;
+    #select-nav-links {
+        column-gap: 1.5rem;
     }
-    #sem-btn2 ul #filters {
-        left: -87px;
+    #select-nav-links a {
+        font-size: 0.7rem;
     }
-    .greet {
-        left: 15rem;
-    }
-    
-}
-@media screen and (max-width:457px){
-    .form h2{
-        left: 4rem;
-    }
-    .container {
-        left: -140px;
-    }
-
-}
-@media screen and (max-width:445px){
-    .line{
-        left: 474px;
-    }
-    .container {
-        left: -136px;
-        top: 8rem;
-    }
-    .topcontainer{
-        top: 12rem;
-    }
-    #select-link{
-        width: 121%;
+    .topcontainer {
+        top: 10rem !important;
     }
     .greet {
-        left: 17rem;
+        left: 29px;
     }
-    #select-link {
-        left: -28px;
-        width: 121%;
-    }
-    #sem-btn2 ul #filters {
-        left: -47px;
+    #sem-btn2 {
+        left: 239px;
     }
 }
-@media screen and (max-width:425px){
-    .form h2{
-        left: 4rem;
+@media screen and (max-width:491px){
+    .line {
+        left: 398px;
+    }
+    #select-nav-links {
+        flex-wrap: wrap;
+        column-gap: 1rem;
+    }
+}
+@media screen and (max-width:475px){
+    .line {
+        left: 380px;
     }
     .container .card {
-        width: 180px;
-        height: 335px;
+        width: 210px;
+        margin: 20px 6px;
+        height: 346px;
+    }
+    .container{
+        width: 456px;
+    }
+    #select-nav-links {
+        column-gap: 0.7rem;
+    }
+    .lSAction>.lSPrev {
+        left: -10px;
+    }
+}
+@media screen and (max-width:451px){
+    .container .card {
+        width: 188px;
+        margin: 20px 6px;
+        height: 318px;
     }
     .container .card .content h2 {
+        position: absolute;
+        top: 10px;
+        right: 29px;
         font-size: 1.5rem;
     }
     .container .card .content h3 {
-        font-size: 1.3rem;
-        margin-top: 25px;
+        position: relative;
+        top: -15px;
     }
     .container .card .content p {
-        font-size: 0.6rem;
-    }
-    .lSAction>.lSNext {
-        background-position: -32px 0;
-        right: 40px;
-    }
-    .container{
-        top: 10rem;
-        left: -135px;
-    }
-    .topcontainer{
-        top: 13rem;
-    }
-}
-@media screen and (max-width:410px){
-    .lSAction>.lSNext {
-        background-position: -32px 0;
-        right: 40px;
-    }
-    .greet {
-        left: 17rem;
-    }
-    #sem-btn2 ul #filters {
-        left: -72px;
-    }
-
-}
-@media screen and (max-width:396px){
-    .line{
-        left: 430px;
-    }
-    .fa-3x {
         position: relative;
-        font-size: 2em;
-    }
-    .fa-phoenix-framework {
-        top: -19px;
-
-    }
-    .greet {
-        left: 18rem;
-    }
-    #sem-btn2 ul #filters {
-        left: -55px;
-    }
-
-    
-}
-@media screen and (max-width:389px){
-    .greet {
-        left: 17rem;
-    }
-    #sem-btn2 ul #filters {
-        left: -67px;
+        font-size: 0.69rem;
+        top: -32px;
+        padding-left: 10px;
     }
     .container {
-        left: -122px;
+        width: 416px;
     }
-    #select-link {
-        width: 150%;
+    #sem-btn2 {
+        left: 187px;
     }
     #select-nav-links {
-        position: relative;
-        right: -18px;
-        column-gap: 0;
+        column-gap: 0.5rem;
     }
-    .greet {
-        left: 19rem;
-    }
-    #sem-btn2 ul #filters {
-        left: -37px;
-    }
-    #select-nav-links{
-        right: 39px;
-    }
-
-}
-@media screen and (max-width:363px){
-    .line{
-        left: 440px;
-    }
-    /* #select-nav-links{
-        right: -35px;
-    } */
     #select-nav-links a {
-        left: 12px;
+        font-size: 0.6rem;
+    }
+    .line {
+        left: 360px;
+    }
+
+}
+@media screen and (max-width:424px){
+    .line {
+        left: 336px;
     }
     .fa-3x {
         position: relative;
         font-size: 2em;
-    }
-    .fa-phoenix-framework {
-        top: -19px;
-
-    }
-    .container {
-        left: -104px;
-    }
-    
-}
-@media screen and (max-width:344px){
-    .container {
-        left: -104px;
-    }   
-    #select-nav-links{
-        right: 12px;
+        top: -23px;
     }
 }
-@media screen and (max-width:332px){
-    .line{
-        left: 440px;
+@media screen and (max-width:409px){
+    #select-nav-links {
+        column-gap: 0.3rem;
     }
-    #select-nav-links{
-        right: 12px;
-    }
-    #select-link {
-        width: 162%;
-    }
-    .greet {
-        left: 20rem;
-    }
-    #sem-btn2 ul #filters {
-        left: -13px;
+    .line {
+        left: 315px;
     }
     .fa-3x {
+        position: relative;
         font-size: 2em;
+        top: -23px;
     }
-    .fa-phoenix-framework {
-        top: -19px;
-
+    .container .card .content p {
+        position: relative;
+        font-size: 0.69rem;
+        top: -32px;
+        padding-left: 2px;
+        padding-right: 0px;
     }
     .container .card{
-        margin: 30px 20px;
+        width: 179px;
+        height: 305px;
     }
-    .lSAction>.lSNext {
-        background-position: -32px 0;
-        right: 48px;
+    .container .card .content h3 {
+        position: relative;
+        top: -15px;
+        left: 9px;
+    }
+    .container .card .content p {
+        position: relative;
+        font-size: 0.69rem;
+        top: -32px;
+        padding-left: 13px;
+        letter-spacing: 0;
+        text-align: none;
     }
     .container {
-        left: -70px;
+        top: 8rem;
+        width: 393px;
+    }
+    .greet{
+        top: 6rem;
+    }
+    #sem-btn2{
+        top: 5.5rem;
+    }
+}
+
+@media screen and (max-width:385px){
+
+    .container {
+        top: 8rem;
+        width: 235px;
+    }
+    .container .card {
+        width: 220px;
+        height: 353px;
+    }
+    .container .card .content h2 {
+        position: absolute;
+        top: 10px;
+        right: 38px;
+        font-size: 1.7rem;
+    }
+    .container .card .content h3 {
+        position: relative;
+        top: -14px;
+        left: -1px;
+    }
+    .container .card .content p {
+        position: relative;
+        font-size: 0.9rem;
+        top: -20px;
+        padding-left: 3px;
+    }
+    #sem-btn2 {
+        left: 74px;
+    }
+    .lSAction>.lSNext {
+        right: -11px;
+    }
+    #select-nav-links a {
+        font-size: 0.55rem;
+    }
+}
+
+@media screen and (max-width:382px){
+    #select-nav-links a {
+        position: relative;
+        font-size: 0.6rem;
+        left: 23px;
+    }
+}
+@media screen and (max-width:375px){
+    .line {
+        left: 284px;
+    }
+    #select-nav-links a {
+        font-size: 0.9rem;
+    }
+    #select-nav-links {
+        padding: 10px -1px;
+        left: 1px;
+    }
+}
+@media screen and (max-width:363px){
+    .user1 {
+        font-size: 13px;
+    }
+    .user {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:350px){
+    .line {
+        left: 258px;
+    }
+    #select-nav-links a{
+        left: 3px;
     }
 }
