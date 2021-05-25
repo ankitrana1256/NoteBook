@@ -7,7 +7,6 @@ from .views import ActivateAccount, SignUpView
 
 urlpatterns = [
     path("login/", views.login_page, name="login"),
-    # path("register/", views.register_page, name="register"),
     path("logout/", views.logout_page, name="logout"),
     path('signup/', SignUpView.as_view(), name='signup'),
     path('activate/<uidb64>/<token>/', ActivateAccount.as_view(), name='activate'),

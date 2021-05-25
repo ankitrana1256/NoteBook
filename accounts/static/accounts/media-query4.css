@@ -28,7 +28,7 @@
     input[name="email"] {
         width: 369px;
         left: 22px;
-        top: 274px;
+        top: 306px;
     }
     #btn {
         left: -47px;
@@ -37,6 +37,14 @@
     b, strong {
         left: 2px;
     }
+}
+
+@media screen and (max-width: 625px){
+input[name="email"] {
+    width: 369px;
+    left: 22px;
+    top: 304px;
+}
 }
 @media screen and (max-width:557px){
     #box {
@@ -65,9 +73,11 @@
     }
     #btn {
         left: -87px;
+        top: 14px;
     }
     b, strong {
         left: 0px;
+        top: -8px;
     }
 }
 @media screen and (max-width:350px){
